@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "locale": "pl",
+    "dir": "ltr",
+    "reviewStatus": "ai-draft-needs-native-review"
+  },
+  "categories": {
+    "dates": {
+      "title": "Elitarne Daktyle",
+      "desc": "Ręcznie zbierane arabskie daktyle premium."
+    },
+    "olives": {
+      "title": "Oliwki",
+      "desc": "Światowej klasy marynowane oliwki."
+    },
+    "olive_oil": {
+      "title": "Oliwa z Oliwek Extra Virgin",
+      "desc": "Tłoczona na zimno w ciągu kilku godzin od zbiorów."
+    }
+  },
+  "seo": {
+    "title": "Castle Crops | Import i eksport daktyli, oliwek i oliwy z oliwek",
+    "description": "Castle Crops dostarcza najwyższej jakości arabskie daktyle, oliwę z oliwek najwyższej jakości z pierwszego tłoczenia oraz marynowane oliwki na rynki międzynarodowe, zgodnie ze światowymi standardami jakości i pakowania.",
+    "ogTitle": "Castle Crops — Z ziemi doliny na stoły całego świata",
+    "ogDescription": "Import, eksport i dystrybucja lokalna daktyli z doliny, pełnej gamy oliwek oraz oliwy z oliwek najwyższej jakości."
+  },
+  "nav": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "farms": "Nasze farmy",
+    "products": "Produkty",
+    "contact": "Kontakt",
+    "whatsapp": "WhatsApp",
+    "blog": "Blog",
+    "brand": "CASTLE CROPS"
+  },
+  "hero": {
+    "eyebrow": "IMPORT · EKSPORT · DYSTRYBUCJA LOKALNA",
+    "headline": "Z ziemi doliny, na",
+    "headlineHighlight": "stoły całego świata",
+    "lead": "Castle Crops dostarcza najwyższej jakości arabskie daktyle, oliwę z oliwek najwyższej jakości i marynowane oliwki, pakowane i eksportowane zgodnie ze światowymi standardami.",
+    "ctaQuote": "Poproś o wycenę",
+    "ctaProducts": "Poznaj nasze produkty",
+    "scroll": "PRZEWIŃ"
+  },
+  "ticker": {
+    "text": "Premium daktyle ✦ Oliwki najwyższej jakości ✦ Oliwa z oliwek najwyższej jakości ✦ Eksport globalny ✦ Międzynarodowe standardy pakowania ✦"
+  },
+  "about": {
+    "eyebrow": "O nas",
+    "title": "Jakość, która zaczyna się od korzeni",
+    "paragraph1": "Castle Crops to wiodąca firma importowo-eksportowa specjalizująca się w pozyskiwaniu i dostawie najlepszych naturalnych produktów rolnych. Z dumą dostarczamy premium arabskie daktyle, oliwę z oliwek najwyższej jakości i marynowane oliwki na rynki międzynarodowe.",
+    "paragraph2": "Dzięki głębokiej wiedzy branżowej i solidnej sieci logistycznej gwarantujemy, że nasze produkty spełniają światowe standardy jakości i pakowania, konsekwentnie przewyższając oczekiwania naszych klientów.",
+    "visionTitle": "Nasza Wizja",
+    "visionDesc": "Stać się światowym standardem dla eksportu produktów rolniczych premium, łącząc starożytne tradycje rolnicze z nowoczesnym zrównoważonym rozwojem i dostarczając niezrównaną jakość arabskich zbiorów na stoły całego świata.",
+    "cta": "Skontaktuj się z nami"
+  },
+  "farms": {
+    "eyebrow": "Nasze farmy",
+    "title": "Prosto z pola na Twój stół",
+    "lead": "Współpracujemy z elitarnymi, strategicznymi farmami stosującymi zrównoważone i przyjazne środowisku praktyki rolnicze, nawadnianymi czystą wodą i uprawianymi w żyznej glebie pod optymalnym nasłonecznieniem.",
+    "stat1Title": "Precyzyjne zbiory ręczne",
+    "stat1Desc": "Pełny nadzór nad ręcznym zbiorem i starannym sortowaniem na każdym etapie.",
+    "stat2Title": "Optymalne słońce i żyzna gleba",
+    "stat2Desc": "Naturalne warunki uprawy, które nadają każdemu plonowi autentyczny smak.",
+    "stat3Title": "100% naturalne",
+    "stat3Desc": "Produkty całkowicie wolne od szkodliwych dodatków chemicznych.",
+    "galleryEyebrow": "GALERIA ZDJĘĆ / WIDEO",
+    "galleryTitle": "Przebłyski z serca naszych zrównoważonych farm.",
+    "block1Title": "Dziedzictwo Naszych Palm",
+    "block1Desc": "Położone w starożytnych oazach, nasze gaje palm daktylowych korzystają z całorocznego słońca i bogatych w minerały podziemnych warstw wodonośnych. Uprawiamy nasze daktyle wykorzystując pokolenia odziedziczonej mądrości rolniczej, całkowicie wolne od sztucznych pestycydów. Ta skrupulatna opieka daje daktyle o niezrównanej słodyczy, wielkości i wartości odżywczej.",
+    "block2Title": "Zrównoważone Gaje Oliwne",
+    "block2Desc": "Nasze drzewa oliwne obejmują rozległe, skrupulatnie utrzymane sady zakorzenione w glebie bogatej w składniki odżywcze. Stosujemy zrównoważone nawadnianie i naturalną kontrolę szkodników, aby chronić lokalny ekosystem. Zbierane delikatnie ręcznie, nasze oliwki są tłoczone na zimno w ciągu kilku godzin, aby zachować ich żywy, pieprzny smak i bardzo niską kwasowość.",
+    "block3Title": "Czystość w Każdej Kropli",
+    "block3Desc": "Nasze najnowocześniejsze zakłady ekstrakcji znajdują się bezpośrednio na farmach, co gwarantuje, że oliwki są tłoczone na zimno w ciągu kilku godzin od zbioru. Ten szybki, kontrolowany temperaturowo proces gwarantuje najniższą możliwą kwasowość i zatrzymuje silne, pieprzne przeciwutleniacze, które definiują światowej klasy oliwę z oliwek Extra Virgin."
+  },
+  "products": {
+    "eyebrow": "Nasze produkty",
+    "title": "Trylogia dobrej ziemi",
+    "dates": {
+      "tag": "DAKTYLE Z DOLINY",
+      "title": "Premium daktyle półsuche",
+      "desc": "Starannie wybierane z farm w dolinie, dostępne w jakości premium i standardowej, w rozmiarach opakowań gotowych do eksportu i sprzedaży detalicznej.",
+      "cta": "Poproś o wycenę"
+    },
+    "olives": {
+      "tag": "OLIWKI",
+      "title": "Zielone · Czarne · Nadziewane · Marynowane",
+      "desc": "Pełna gama oliwek pakowanych zgodnie z potrzebami każdego rynku — słoiki detaliczne i beczki eksportowe do zamówień hurtowych.",
+      "cta": "Poproś o wycenę"
+    },
+    "oliveOil": {
+      "tag": "OLIWA Z OLIWEK",
+      "title": "Extra Virgin",
+      "desc": "Oliwa z oliwek najwyższej jakości tłoczona ze starannie wyselekcjonowanych zbiorów, dostępna w różnych rozmiarach butelek oraz luzem.",
+      "cta": "Poproś o wycenę"
+    },
+    "featuredBadge": "Produkt polecany"
+  },
+  "markets": {
+    "eyebrow": "Rynki i zaufanie",
+    "title": "Służymy tym, którzy ufają jakości",
+    "weServe": "Obsługujemy",
+    "wholesale": "Handlowców hurtowych",
+    "retail": "Sklepy i detalistów",
+    "certTitle": "Certyfikaty jakości",
+    "certNote": "* Zarezerwowane miejsca na logo certyfikatów, gdy będą dostępne."
+  },
+  "contact": {
+    "eyebrow": "Skontaktuj się z nami",
+    "title": "Rozpocznij zapytanie o wycenę",
+    "form": {
+      "name": "Imię i nazwisko",
+      "company": "Firma",
+      "phone": "Telefon / WhatsApp",
+      "email": "E-mail",
+      "product": "Produkt, którym jesteś zainteresowany",
+      "quantity": "Przybliżona ilość",
+      "quantityPlaceholder": "200 kg / 1 tona ...",
+      "message": "Twoja wiadomość",
+      "submit": "Wyślij zapytanie o wycenę",
+      "successAlert": "Dziękujemy, Twoje zapytanie zostało odebrane — wkrótce się z Tobą skontaktujemy.",
+      "productSelect": "-- Wybierz Produkt --",
+      "optDates": "Daktyle Premium",
+      "optOlives": "Oliwki",
+      "optOil": "Oliwa z Oliwek Extra Virgin",
+      "errName": "Imię musi mieć co najmniej 2 znaki",
+      "errPhoneReq": "Numer telefonu jest wymagany",
+      "errPhoneInv": "Nieprawidłowy format numeru telefonu",
+      "errEmail": "Proszę wprowadzić poprawny adres e-mail",
+      "errProduct": "Proszę wybrać co najmniej jeden produkt"
+    },
+    "whatsappCard": {
+      "title": "Natychmiastowy kontakt przez WhatsApp",
+      "desc": "Do szybkich zapytań i pilnych zamówień",
+      "cta": "Napisz do nas"
+    },
+    "infoCard": {
+      "title": "Informacje kontaktowe",
+      "phone": "Linie telefoniczne oddziałów",
+      "email": "Oficjalny e-mail",
+      "location": "Lokalizacja"
+    },
+    "infoTitle": "Informacje Kontaktowe",
+    "waDesc": "Do szybkich zapytań i pilnych zamówień",
+    "waCta": "Wiadomość",
+    "pageDesc": "Poproś o wycenę dla przesyłek eksportowych."
+  },
+  "footer": {
+    "tagline": "Dostarczamy to, co najlepsze z arabskiej ziemi, całemu światu, zgodnie ze światowymi standardami jakości.",
+    "companyHeading": "Firma",
+    "aboutLink": "O nas",
+    "farmsLink": "Nasze farmy",
+    "productsHeading": "Produkty",
+    "datesLink": "Daktyle",
+    "olivesLink": "Oliwki",
+    "oilLink": "Oliwa z oliwek",
+    "contactHeading": "Kontakt",
+    "quoteLink": "Poproś o wycenę",
+    "whatsappLink": "WhatsApp",
+    "copyright": "© {year} Castle Crops Import i Eksport. Wszelkie prawa zastrzeżone.",
+    "mockupNote": "Makieta projektowa — Podgląd",
+    "blogLink": "Wiadomości i Blog",
+    "privacyLink": "Polityka Prywatności",
+    "termsLink": "Warunki Korzystania z Usług"
+  },
+  "langSwitcher": {
+    "label": "Język"
+  },
+  "pages": {
+    "farmsGallery": {
+      "title": "Galeria naszych farm",
+      "subtitle": "Zdjęcia i wideo, od pola po opakowanie"
+    },
+    "careers": {
+      "title": "Kariera",
+      "subtitle": "Dołącz do zespołu Castle Crops",
+      "empty": "Obecnie brak wolnych stanowisk"
+    },
+    "blog": {
+      "title": "Aktualności i blog",
+      "subtitle": "Najnowsze wiadomości firmowe i branżowe",
+      "empty": "Brak artykułów"
+    },
+    "certifications": {
+      "title": "Certyfikaty jakości",
+      "subtitle": "Certyfikowane zgodnie z najwyższymi światowymi standardami"
+    }
+  },
+  "a11y": {
+    "openLabel": "Opcje dostępności",
+    "title": "Dostępność",
+    "textSize": "Rozmiar tekstu",
+    "textSizeNormal": "Normalny",
+    "textSizeLarge": "Duży",
+    "textSizeExtraLarge": "Bardzo duży",
+    "highContrast": "Wysoki kontrast",
+    "reduceMotion": "Redukcja ruchu",
+    "underlineLinks": "Podkreśl linki",
+    "readableFont": "Czytelna czcionka",
+    "reset": "Przywróć domyślne",
+    "close": "Zamknij"
+  },
+  "home": {
+    "productsDesc": "Dostępne w opakowaniach hurtowych i konsumenckich.",
+    "datesDesc": "Ręcznie zbierane z najlepszych palm, oferujące bogaty smak i idealną konsystencję.",
+    "oliveOilDesc": "W 100% naturalna, tłoczona bezpośrednio z nieskazitelnych oliwek.",
+    "olivesDesc": "Peklowane do perfekcji, zachowujące swoją jędrność i głęboki smak.",
+    "viewCatalog": "Zobacz Pełny Katalog",
+    "blogEyebrow": "NAJNOWSZE WIADOMOŚCI",
+    "blogTitle": "Z Bloga",
+    "blogDesc": "Spostrzeżenia, historie i aktualizacje od Castle Crops.",
+    "noArticles": "Jeszcze brak artykułów",
+    "readArticle": "Przeczytaj Artykuł",
+    "viewAllArticles": "Zobacz Wszystkie Artykuły",
+    "marketsDesc": "Eksport na wiele kontynentów przy pełnej zgodności.",
+    "marketsCol1Title": "Globalny Eksport",
+    "marketsCol1Desc": "Dostarczamy do dystrybutorów hurtowych, producentów żywności i marek detalicznych premium na wielu kontynentach.",
+    "eu": "Unia Europejska",
+    "na": "Ameryka Północna",
+    "me": "Bliski Wschód i GCC",
+    "ap": "Azja-Pacyfik",
+    "marketsCol2Title": "Niezawodność i Standardy",
+    "marketsCol2Desc": "Międzynarodowo certyfikowane operacje przestrzegające ścisłej kontroli jakości, etycznych praktyk i zrównoważonego rozwoju.",
+    "contactDesc": "Zacznijmy rozmowę o Twoich potrzebach w zakresie dostaw.",
+    "goToContact": "Skontaktuj się z nami",
+    "b2bTitle": "Eksportujemy Globalnie",
+    "b2bDesc": "Zapytania hurtowe i masowe mile widziane. Jesteśmy w pełni wyposażeni do obsługi ogromnych zamówień kontenerowych i logistyki międzynarodowej, aby sprostać Twoim globalnym potrzebom biznesowym."
+  },
+  "aboutPage": {
+    "certEyebrow": "CERTYFIKATY",
+    "certTitle": "Pełne Szczegóły",
+    "certDesc": "Certyfikowane według najwyższych światowych standardów.",
+    "pending": "Oczekujące"
+  },
+  "blogPage": {
+    "eyebrow": "AKTUALNOŚCI I BLOG",
+    "title": "Najnowsze Aktualizacje",
+    "desc": "Wiadomości firmowe, aktualizacje ze zbiorów i spostrzeżenia branżowe."
+  },
+  "productsPage": {
+    "viewDetails": "Zobacz Szczegóły",
+    "comingSoon": "Produkty wkrótce.",
+    "ourCollection": "NASZA KOLEKCJA",
+    "downloadCatalog": "Pobierz Katalog Produktów"
+  }
+}

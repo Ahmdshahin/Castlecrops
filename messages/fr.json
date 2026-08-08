@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "locale": "fr",
+    "dir": "ltr",
+    "reviewStatus": "ai-draft-needs-native-review"
+  },
+  "categories": {
+    "dates": {
+      "title": "Dattes d'Élite",
+      "desc": "Dattes arabes premium récoltées à la main."
+    },
+    "olives": {
+      "title": "Olives",
+      "desc": "Olives marinées de classe mondiale."
+    },
+    "olive_oil": {
+      "title": "Huile d'Olive Extra Vierge",
+      "desc": "Pressée à froid quelques heures après la récolte."
+    }
+  },
+  "seo": {
+    "title": "Castle Crops | Import-export de dattes, olives et huile d'olive",
+    "description": "Castle Crops livre les meilleures dattes arabes, huile d'olive extra vierge et olives marinées aux marchés internationaux, selon des normes de qualité et d'emballage de classe mondiale.",
+    "ogTitle": "Castle Crops — De la terre de la vallée aux tables du monde entier",
+    "ogDescription": "Import, export et distribution locale de dattes de la vallée, d'une gamme complète d'olives et d'huile d'olive extra vierge."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "farms": "Nos fermes",
+    "products": "Produits",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp",
+    "blog": "Blog",
+    "brand": "CASTLE CROPS"
+  },
+  "hero": {
+    "eyebrow": "IMPORT · EXPORT · DISTRIBUTION LOCALE",
+    "headline": "De la terre de la vallée, aux",
+    "headlineHighlight": "tables du monde entier",
+    "lead": "Castle Crops livre les meilleures dattes arabes, l'huile d'olive extra vierge et les olives marinées, emballées et exportées selon des normes de classe mondiale.",
+    "ctaQuote": "Demander un devis",
+    "ctaProducts": "Découvrir nos produits",
+    "scroll": "DÉFILER"
+  },
+  "ticker": {
+    "text": "Dattes premium ✦ Olives de qualité mondiale ✦ Huile d'olive extra vierge ✦ Export international ✦ Normes d'emballage internationales ✦"
+  },
+  "about": {
+    "eyebrow": "À propos de nous",
+    "title": "Une qualité qui commence à la racine",
+    "paragraph1": "Castle Crops est une entreprise leader dans l'import-export, spécialisée dans l'approvisionnement des meilleurs produits agricoles naturels. Nous sommes fiers de livrer des dattes arabes premium, de l'huile d'olive extra vierge et des olives marinées aux marchés internationaux.",
+    "paragraph2": "Forts d'une expertise sectorielle approfondie et d'un réseau logistique solide, nous garantissons que nos produits répondent à des normes de qualité et d'emballage de classe mondiale, dépassant constamment les attentes de nos clients.",
+    "visionTitle": "Notre Vision",
+    "visionDesc": "Devenir la référence mondiale en matière d'exportations agricoles de premier choix, en alliant les traditions agricoles ancestrales à la durabilité moderne, et en offrant la qualité inégalée des récoltes arabes aux tables du monde entier.",
+    "cta": "Nous contacter"
+  },
+  "farms": {
+    "eyebrow": "Nos fermes",
+    "title": "Directement du champ à votre table",
+    "lead": "Nous collaborons avec des fermes stratégiques d'élite pratiquant une agriculture durable et respectueuse de l'environnement, nourries par une eau pure et un sol riche sous un ensoleillement optimal.",
+    "stat1Title": "Récolte manuelle minutieuse",
+    "stat1Desc": "Supervision complète de la cueillette à la main et du tri méticuleux à chaque étape.",
+    "stat2Title": "Ensoleillement optimal et sol riche",
+    "stat2Desc": "Des conditions de culture naturelles qui donnent à chaque récolte son goût authentique.",
+    "stat3Title": "100 % naturel",
+    "stat3Desc": "Des produits entièrement exempts d'additifs chimiques nocifs.",
+    "galleryEyebrow": "GALERIE PHOTO / VIDÉO",
+    "galleryTitle": "Aperçus du cœur de nos fermes durables.",
+    "block1Title": "L'Héritage de nos Palmiers",
+    "block1Desc": "Nichées dans des oasis anciennes, nos palmeraies dattiers bénéficient d'un ensoleillement tout au long de l'année et de nappes phréatiques riches en minéraux. Nous cultivons nos dattes selon des générations de sagesse agricole, sans aucun pesticide artificiel. Ce soin méticuleux donne des dattes d'une douceur, d'une taille et d'une valeur nutritionnelle inégalées.",
+    "block2Title": "Vergers d'Oliviers Durables",
+    "block2Desc": "Nos oliviers s'étendent sur de vastes vergers méticuleusement entretenus, enracinés dans un sol riche en nutriments. Nous utilisons une irrigation durable et une lutte naturelle contre les ravageurs pour protéger l'écosystème local. Récoltées délicatement à la main, nos olives sont pressées à froid en quelques heures pour préserver leur saveur vibrante et poivrée et leur acidité ultra-basse.",
+    "block3Title": "La Pureté dans Chaque Goutte",
+    "block3Desc": "Nos installations d'extraction de pointe sont situées directement dans les fermes, garantissant que les olives soient pressées à froid quelques heures après la récolte. Ce processus rapide et à température contrôlée garantit l'acidité la plus basse possible et conserve les antioxydants robustes et poivrés qui définissent une huile d'olive extra vierge de classe mondiale."
+  },
+  "products": {
+    "eyebrow": "Nos produits",
+    "title": "La trilogie de la bonne terre",
+    "dates": {
+      "tag": "DATTES DE LA VALLÉE",
+      "title": "Dattes premium mi-sèches",
+      "desc": "Sélectionnées avec soin dans les fermes de la vallée, disponibles en qualité premium et standard, avec des formats d'emballage adaptés à l'export et à la vente au détail.",
+      "cta": "Demander un devis"
+    },
+    "olives": {
+      "tag": "OLIVES",
+      "title": "Vertes · Noires · Farcies · Marinées",
+      "desc": "Une gamme complète d'olives conditionnées pour chaque marché : bocaux pour la vente au détail et fûts qualité export pour les commandes en gros.",
+      "cta": "Demander un devis"
+    },
+    "oliveOil": {
+      "tag": "HUILE D'OLIVE",
+      "title": "Extra Vierge",
+      "desc": "Huile d'olive extra vierge pressée à partir de récoltes soigneusement sélectionnées, proposée dans divers formats de bouteilles et en vrac.",
+      "cta": "Demander un devis"
+    },
+    "featuredBadge": "Produit vedette"
+  },
+  "markets": {
+    "eyebrow": "Marchés et confiance",
+    "title": "Au service de ceux qui font confiance à la qualité",
+    "weServe": "Nous servons",
+    "wholesale": "Grossistes",
+    "retail": "Boutiques et détaillants",
+    "certTitle": "Certifications qualité",
+    "certNote": "* Emplacements réservés pour les logos de certification dès qu'ils seront disponibles."
+  },
+  "contact": {
+    "eyebrow": "Contactez-nous",
+    "title": "Lancez votre demande de devis",
+    "form": {
+      "name": "Nom",
+      "company": "Entreprise",
+      "phone": "Téléphone / WhatsApp",
+      "email": "E-mail",
+      "product": "Produit souhaité",
+      "quantity": "Quantité approximative",
+      "quantityPlaceholder": "200 kg / 1 tonne ...",
+      "message": "Votre message",
+      "submit": "Envoyer la demande de devis",
+      "successAlert": "Merci, votre demande a bien été reçue — nous vous contacterons très prochainement.",
+      "productSelect": "-- Sélectionner un Produit --",
+      "optDates": "Dattes Premium",
+      "optOlives": "Olives",
+      "optOil": "Huile d'Olive Extra Vierge",
+      "errName": "Le nom doit comporter au moins 2 caractères",
+      "errPhoneReq": "Le numéro de téléphone est requis",
+      "errPhoneInv": "Format de numéro de téléphone invalide",
+      "errEmail": "Veuillez entrer une adresse email valide",
+      "errProduct": "Veuillez sélectionner au moins un produit"
+    },
+    "whatsappCard": {
+      "title": "Contact instantané via WhatsApp",
+      "desc": "Pour les demandes rapides et les commandes urgentes",
+      "cta": "Nous écrire"
+    },
+    "infoCard": {
+      "title": "Coordonnées",
+      "phone": "Lignes téléphoniques des filiales",
+      "email": "E-mail officiel",
+      "location": "Localisation"
+    },
+    "infoTitle": "Coordonnées",
+    "waDesc": "Pour des demandes rapides et des commandes urgentes",
+    "waCta": "Message",
+    "pageDesc": "Demander un devis pour des expéditions d'exportation."
+  },
+  "footer": {
+    "tagline": "Nous apportons le meilleur de la terre arabe au monde entier, selon des normes de qualité de premier ordre.",
+    "companyHeading": "Entreprise",
+    "aboutLink": "À propos",
+    "farmsLink": "Nos fermes",
+    "productsHeading": "Produits",
+    "datesLink": "Dattes",
+    "olivesLink": "Olives",
+    "oilLink": "Huile d'olive",
+    "contactHeading": "Contact",
+    "quoteLink": "Demander un devis",
+    "whatsappLink": "WhatsApp",
+    "copyright": "© {year} Castle Crops pour l'import-export. Tous droits réservés.",
+    "mockupNote": "Maquette de conception — Aperçu",
+    "blogLink": "Actualités et Blog",
+    "privacyLink": "Politique de Confidentialité",
+    "termsLink": "Conditions d'Utilisation"
+  },
+  "langSwitcher": {
+    "label": "Langue"
+  },
+  "pages": {
+    "farmsGallery": {
+      "title": "Galerie de nos fermes",
+      "subtitle": "Photos et vidéos, du champ à l'emballage"
+    },
+    "careers": {
+      "title": "Carrières",
+      "subtitle": "Rejoignez l'équipe Castle Crops",
+      "empty": "Aucun poste ouvert pour le moment"
+    },
+    "blog": {
+      "title": "Actualités & blog",
+      "subtitle": "Dernières nouvelles de l'entreprise et du secteur",
+      "empty": "Aucun article pour le moment"
+    },
+    "certifications": {
+      "title": "Certifications qualité",
+      "subtitle": "Certifiés selon les normes internationales les plus strictes"
+    }
+  },
+  "a11y": {
+    "openLabel": "Options d'accessibilité",
+    "title": "Accessibilité",
+    "textSize": "Taille du texte",
+    "textSizeNormal": "Normal",
+    "textSizeLarge": "Grand",
+    "textSizeExtraLarge": "Très grand",
+    "highContrast": "Contraste élevé",
+    "reduceMotion": "Réduire le mouvement",
+    "underlineLinks": "Souligner les liens",
+    "readableFont": "Police lisible",
+    "reset": "Réinitialiser",
+    "close": "Fermer"
+  },
+  "home": {
+    "productsDesc": "Disponible en vrac et en emballage consommateur.",
+    "datesDesc": "Cueillies à la main sur les meilleurs palmiers, offrant une saveur riche et une texture parfaite.",
+    "oliveOilDesc": "100% naturel, extrait directement d'olives pures.",
+    "olivesDesc": "Affinées à la perfection, conservant leur croquant ferme et leur saveur profonde.",
+    "viewCatalog": "Voir le Catalogue Complet",
+    "blogEyebrow": "DERNIÈRES NOUVELLES",
+    "blogTitle": "Depuis le Blog",
+    "blogDesc": "Informations, histoires et mises à jour de Castle Crops.",
+    "noArticles": "Pas encore d'articles",
+    "readArticle": "Lire l'Article",
+    "viewAllArticles": "Voir Tous les Articles",
+    "marketsDesc": "Exportation vers plusieurs continents en totale conformité.",
+    "marketsCol1Title": "Exportation Mondiale",
+    "marketsCol1Desc": "Nous approvisionnons les distributeurs en gros, les fabricants de produits alimentaires et les marques de détail haut de gamme sur plusieurs continents.",
+    "eu": "Union Européenne",
+    "na": "Amérique du Nord",
+    "me": "Moyen-Orient et CCG",
+    "ap": "Asie-Pacifique",
+    "marketsCol2Title": "Fiabilité et Normes",
+    "marketsCol2Desc": "Des opérations certifiées au niveau international, respectant un contrôle qualité strict, des pratiques éthiques et le développement durable.",
+    "contactDesc": "Commençons une discussion sur vos besoins d'approvisionnement.",
+    "goToContact": "Prendre Contact",
+    "b2bTitle": "Exportation Mondiale",
+    "b2bDesc": "Demandes de vente en gros et en vrac bienvenues. Nous sommes entièrement équipés pour traiter les commandes de conteneurs massives et la logistique internationale."
+  },
+  "aboutPage": {
+    "certEyebrow": "CERTIFICATIONS",
+    "certTitle": "Détail Complet",
+    "certDesc": "Certifié selon les normes mondiales les plus élevées.",
+    "pending": "En attente"
+  },
+  "blogPage": {
+    "eyebrow": "ACTUALITÉS & BLOG",
+    "title": "Dernières Mises à Jour",
+    "desc": "Nouvelles de l'entreprise, mises à jour sur les récoltes et informations sur l'industrie."
+  },
+  "productsPage": {
+    "viewDetails": "Voir les Détails",
+    "comingSoon": "Produits à venir.",
+    "ourCollection": "NOTRE COLLECTION",
+    "downloadCatalog": "Télécharger le Catalogue"
+  }
+}

@@ -1,0 +1,46 @@
+Castle Crops - Website Overview
+
+Overview
+Castle Crops is a premium agricultural exporter specializing in high-quality dates, artisan olives, and pure cold-pressed olive oil. The website serves as their digital storefront, international brochure, and B2B lead generation platform.
+
+Architecture & Tech Stack
+- Frontend: Next.js 16 (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS & Vanilla CSS (Custom premium aesthetics, dark/light modes)
+- Database & Authentication: Supabase (PostgreSQL)
+- Media Storage: Supabase Storage Buckets
+- Rendering Strategy: Static Site Generation (SSG) with Incremental Static Regeneration (ISR) for maximum performance.
+
+Key Features
+1. Multi-Language Support (i18n)
+The website is fully localized in 5 languages: English, Arabic, French, Polish, and Turkish. It includes RTL support for Arabic and dynamic route mapping. Languages can be globally enabled/disabled directly from the Admin CMS without redeploying.
+
+2. Custom Headless CMS (Admin Panel)
+A bespoke, secure admin dashboard built into the application (/admin) allows administrators to manage:
+- Products: Add, edit, and categorize items with multi-lingual titles and descriptions.
+- Categories: Group products dynamically.
+- Blog Posts: Publish multi-lingual articles with rich text.
+- Certifications: Upload and order quality trust badges.
+- Settings: Manage contact info, social media links, and Google Maps integrations.
+- Languages: Toggle active site languages.
+
+3. Request for Quote (RFQ) System
+B2B buyers can submit detailed quote requests. The system validates the submission, stores it in the Supabase database, and instantly sends an HTML email notification via SMTP (Nodemailer) to the sales team.
+
+4. High Performance & SEO
+The entire site is statically pre-rendered at build time. It features a dynamically generated sitemap.xml that correctly maps hreflang tags across all 5 languages, ensuring optimal Google discoverability. Heavy components like WhatsApp floaters and visual dividers are lazy-loaded.
+
+5. Premium Design
+The design avoids generic templates, opting for a bespoke "glassmorphism" aesthetic with a curated color palette (Black Matte, Gold Bright, Cream) and modern typography (Cormorant Garamond and Jost).
+
+Database Schema Summary
+- site_settings: Key-value store for global configurations.
+- categories: Product groupings.
+- products: Individual items linked to categories.
+- certifications: Quality badges.
+- blog_posts: Articles and news.
+- rfq_submissions: Inbox for customer quote requests.
+- users: Supabase native authentication for admin access.
+
+Security
+The backend API and server actions utilize a secure service_role key that bypasses standard Row Level Security (RLS) internally, allowing the database to be strictly locked down (Deny All) from public REST API access while functioning perfectly for the website.

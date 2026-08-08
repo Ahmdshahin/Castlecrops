@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "locale": "tr",
+    "dir": "ltr",
+    "reviewStatus": "ai-draft-needs-native-review"
+  },
+  "categories": {
+    "dates": {
+      "title": "Elit Hurmalar",
+      "desc": "Elle toplanan birinci sınıf Arap hurmaları."
+    },
+    "olives": {
+      "title": "Zeytinler",
+      "desc": "Birinci sınıf salamura zeytinler."
+    },
+    "olive_oil": {
+      "title": "Sızma Zeytinyağı",
+      "desc": "Hasattan birkaç saat sonra soğuk sıkım."
+    }
+  },
+  "seo": {
+    "title": "Castle Crops | Hurma, Zeytin ve Zeytinyağı İthalat-İhracatı",
+    "description": "Castle Crops, en kaliteli Arap hurmalarını, sızma zeytinyağını ve turşu zeytinleri dünya standartlarında kalite ve ambalaj ile uluslararası pazarlara ulaştırır.",
+    "ogTitle": "Castle Crops — Vadinin Toprağından Dünyanın Sofralarına",
+    "ogDescription": "Vadi hurması, geniş zeytin çeşitleri ve sızma zeytinyağının ithalatı, ihracatı ve yerel dağıtımı."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "farms": "Çiftliklerimiz",
+    "products": "Ürünler",
+    "contact": "İletişim",
+    "whatsapp": "WhatsApp",
+    "blog": "Blog",
+    "brand": "CASTLE CROPS"
+  },
+  "hero": {
+    "eyebrow": "İTHALAT · İHRACAT · YEREL DAĞITIM",
+    "headline": "Vadinin topraklarından,",
+    "headlineHighlight": "dünyanın sofralarına",
+    "lead": "Castle Crops, en kaliteli Arap hurmalarını, sızma zeytinyağını ve turşu zeytinleri dünya standartlarında paketleyip ihraç ediyor.",
+    "ctaQuote": "Teklif İsteyin",
+    "ctaProducts": "Ürünlerimizi Keşfedin",
+    "scroll": "AŞAĞI KAYDIRIN"
+  },
+  "ticker": {
+    "text": "Premium Hurma ✦ Dünya Standartında Zeytin ✦ Sızma Zeytinyağı ✦ Küresel İhracat ✦ Uluslararası Ambalaj Standartları ✦"
+  },
+  "about": {
+    "eyebrow": "Hakkımızda",
+    "title": "Köklerden başlayan kalite",
+    "paragraph1": "Castle Crops, en kaliteli doğal tarım ürünlerinin tedarikinde uzmanlaşmış öncü bir ithalat-ihracat şirketidir. Premium Arap hurmalarını, sızma zeytinyağını ve turşu zeytinleri uluslararası pazarlara ulaştırmaktan gurur duyuyoruz.",
+    "paragraph2": "Derin sektör tecrübemiz ve güçlü lojistik ağımız sayesinde, ürünlerimizin dünya standartlarında kalite ve ambalajlama kriterlerini karşıladığından ve müşterilerimizin beklentilerini sürekli aştığından emin oluyoruz.",
+    "visionTitle": "Vizyonumuz",
+    "visionDesc": "Birinci sınıf tarımsal ihracatta küresel standart haline gelmek, antik tarım geleneklerini modern sürdürülebilirlikle buluşturarak Arap hasadının eşsiz kalitesini dünyanın sofralarına ulaştırmak.",
+    "cta": "Bize Ulaşın"
+  },
+  "farms": {
+    "eyebrow": "Çiftliklerimiz",
+    "title": "Tarladan doğrudan sofranıza",
+    "lead": "Sürdürülebilir ve çevre dostu tarım uygulayan seçkin stratejik çiftliklerle iş birliği yapıyoruz; bu çiftlikler saf su ve zengin toprakla, ideal güneş ışığı altında besleniyor.",
+    "stat1Title": "Titiz El Hasadı",
+    "stat1Desc": "Her aşamada elle toplama ve özenli ayıklama süreçlerinin tam denetimi.",
+    "stat2Title": "İdeal Güneş ve Zengin Toprak",
+    "stat2Desc": "Her ürüne özgün tadını veren doğal yetiştirme koşulları.",
+    "stat3Title": "%100 Doğal",
+    "stat3Desc": "Zararlı kimyasal katkı maddesi içermeyen ürünler.",
+    "galleryEyebrow": "FOTOĞRAF / VİDEO GALERİSİ",
+    "galleryTitle": "Sürdürülebilir çiftliklerimizin kalbinden kesitler.",
+    "block1Title": "Palmiyelerimizin Mirası",
+    "block1Desc": "Eski vahalarda yer alan hurma bahçelerimiz, yıl boyu güneş ışığından ve mineral bakımından zengin yeraltı akiferlerinden yararlanır. Hurmalarımızı nesilden nesile aktarılan tarımsal bilgelikle, yapay tarım ilaçlarından tamamen uzak bir şekilde yetiştiriyoruz. Bu titiz bakım, eşsiz tatlılık, boyut ve besin değerine sahip hurmalar verir.",
+    "block2Title": "Sürdürülebilir Zeytin Bahçeleri",
+    "block2Desc": "Zeytin ağaçlarımız, besin açısından zengin topraklarda kök salmış geniş, titizlikle bakımlı bahçelere yayılmıştır. Yerel ekosistemi korumak için sürdürülebilir sulama ve doğal zararlı kontrolü uyguluyoruz. Elle nazikçe hasat edilen zeytinlerimiz, canlı, biberli lezzetlerini ve ultra düşük asitliklerini korumak için saatler içinde soğuk sıkılır.",
+    "block3Title": "Her Damlada Saflık",
+    "block3Desc": "Son teknoloji çıkarma tesislerimiz doğrudan çiftliklerde bulunur, böylece zeytinlerin hasattan sonraki saatler içinde soğuk sıkılması sağlanır. Bu hızlı, sıcaklık kontrollü süreç, mümkün olan en düşük asitliği garanti eder ve birinci sınıf Natürel Sızma Zeytinyağını tanımlayan sağlam, biberli antioksidanları hapseder."
+  },
+  "products": {
+    "eyebrow": "Ürünlerimiz",
+    "title": "Bereketli toprağın üçlüsü",
+    "dates": {
+      "tag": "VADİ HURMASI",
+      "title": "Premium Yarı Kuru Hurma",
+      "desc": "Vadi çiftliklerinden özenle seçilir; ihracata ve perakende satışa uygun ambalaj boyutlarıyla premium ve standart kalitede sunulur.",
+      "cta": "Teklif İsteyin"
+    },
+    "olives": {
+      "tag": "ZEYTİNLER",
+      "title": "Yeşil · Siyah · Dolgulu · Marine",
+      "desc": "Her pazara uygun şekilde paketlenmiş eksiksiz bir zeytin yelpazesi — perakende için kavanozlar, toptan siparişler için ihracat kalitesinde variller.",
+      "cta": "Teklif İsteyin"
+    },
+    "oliveOil": {
+      "tag": "ZEYTİNYAĞI",
+      "title": "Natürel Sızma",
+      "desc": "Özenle seçilmiş hasatlardan sıkılan sızma zeytinyağı, çeşitli şişe ve dökme boyutlarında sunulmaktadır.",
+      "cta": "Teklif İsteyin"
+    },
+    "featuredBadge": "Öne Çıkan Ürün"
+  },
+  "markets": {
+    "eyebrow": "Pazarlar ve Güven",
+    "title": "Kaliteye güvenenlere hizmet ediyoruz",
+    "weServe": "Hizmet Verdiğimiz Kesim",
+    "wholesale": "Toptan Tüccarlar",
+    "retail": "Mağazalar ve Perakendeciler",
+    "certTitle": "Kalite Sertifikaları",
+    "certNote": "* Sertifika logoları hazır olduğunda eklenmek üzere ayrılmış alanlar."
+  },
+  "contact": {
+    "eyebrow": "Bize Ulaşın",
+    "title": "Teklif Talebinizi Başlatın",
+    "form": {
+      "name": "Ad Soyad",
+      "company": "Şirket",
+      "phone": "Telefon / WhatsApp",
+      "email": "E-posta",
+      "product": "İlgilenilen Ürün",
+      "quantity": "Yaklaşık Miktar",
+      "quantityPlaceholder": "200 kg / 1 ton ...",
+      "message": "Mesajınız",
+      "submit": "Teklif Talebini Gönder",
+      "successAlert": "Teşekkürler, talebiniz alındı — en kısa sürede sizinle iletişime geçeceğiz.",
+      "productSelect": "-- Ürün Seçin --",
+      "optDates": "Premium Hurmalar",
+      "optOlives": "Zeytinler",
+      "optOil": "Natürel Sızma Zeytinyağı",
+      "errName": "Ad en az 2 karakter olmalıdır",
+      "errPhoneReq": "Telefon numarası gereklidir",
+      "errPhoneInv": "Geçersiz telefon numarası formatı",
+      "errEmail": "Lütfen geçerli bir e-posta adresi girin",
+      "errProduct": "Lütfen en az bir ürün seçin"
+    },
+    "whatsappCard": {
+      "title": "WhatsApp ile Anında İletişim",
+      "desc": "Hızlı sorular ve acil siparişler için",
+      "cta": "Bize Yazın"
+    },
+    "infoCard": {
+      "title": "İletişim Bilgileri",
+      "phone": "Şube Telefon Hatları",
+      "email": "Resmi E-posta",
+      "location": "Konum"
+    },
+    "infoTitle": "İletişim Bilgileri",
+    "waDesc": "Hızlı sorular ve acil siparişler için",
+    "waCta": "Mesaj Gönder",
+    "pageDesc": "İhracat gönderileri için fiyat teklifi isteyin."
+  },
+  "footer": {
+    "tagline": "Arap topraklarının en iyisini, dünya standartlarında kalite ile dünyaya sunuyoruz.",
+    "companyHeading": "Şirket",
+    "aboutLink": "Hakkımızda",
+    "farmsLink": "Çiftliklerimiz",
+    "productsHeading": "Ürünler",
+    "datesLink": "Hurma",
+    "olivesLink": "Zeytinler",
+    "oilLink": "Zeytinyağı",
+    "contactHeading": "İletişim",
+    "quoteLink": "Teklif İsteyin",
+    "whatsappLink": "WhatsApp",
+    "copyright": "© {year} Castle Crops İthalat ve İhracat. Tüm hakları saklıdır.",
+    "mockupNote": "Tasarım Maketi — Önizleme",
+    "blogLink": "Haberler ve Blog",
+    "privacyLink": "Gizlilik Politikası",
+    "termsLink": "Hizmet Şartları"
+  },
+  "langSwitcher": {
+    "label": "Dil"
+  },
+  "pages": {
+    "farmsGallery": {
+      "title": "Çiftlik Galerimiz",
+      "subtitle": "Tarladan ambalaja fotoğraf ve videolar"
+    },
+    "careers": {
+      "title": "Kariyer",
+      "subtitle": "Castle Crops ekibine katılın",
+      "empty": "Şu anda açık pozisyon bulunmamaktadır"
+    },
+    "blog": {
+      "title": "Haberler ve Blog",
+      "subtitle": "Şirket ve sektörden son gelişmeler",
+      "empty": "Henüz makale yok"
+    },
+    "certifications": {
+      "title": "Kalite Sertifikaları",
+      "subtitle": "En yüksek küresel standartlara göre sertifikalandırılmıştır"
+    }
+  },
+  "a11y": {
+    "openLabel": "Erişilebilirlik seçenekleri",
+    "title": "Erişilebilirlik",
+    "textSize": "Metin Boyutu",
+    "textSizeNormal": "Normal",
+    "textSizeLarge": "Büyük",
+    "textSizeExtraLarge": "Çok Büyük",
+    "highContrast": "Yüksek Kontrast",
+    "reduceMotion": "Hareketi Azalt",
+    "underlineLinks": "Bağlantıların Altını Çiz",
+    "readableFont": "Okunabilir Yazı Tipi",
+    "reset": "Varsayılana Sıfırla",
+    "close": "Kapat"
+  },
+  "home": {
+    "productsDesc": "Dökme ve tüketici ambalajlarında mevcuttur.",
+    "datesDesc": "En iyi palmiyelerden elle seçilmiş, zengin lezzet ve mükemmel doku sunar.",
+    "oliveOilDesc": "%100 doğal, doğrudan saf zeytinlerden çıkarılır.",
+    "olivesDesc": "Mükemmel şekilde terbiye edilmiş, sıkı ısırıklarını ve derin lezzetlerini korur.",
+    "viewCatalog": "Tüm Kataloğu Görüntüle",
+    "blogEyebrow": "EN SON HABERLER",
+    "blogTitle": "Blogdan",
+    "blogDesc": "Castle Crops'tan içgörüler, hikayeler ve güncellemeler.",
+    "noArticles": "Henüz makale yok",
+    "readArticle": "Makaleyi Oku",
+    "viewAllArticles": "Tüm Makaleleri Görüntüle",
+    "marketsDesc": "Tam uyumlulukla birden fazla kıtaya ihracat.",
+    "marketsCol1Title": "Küresel İhracat",
+    "marketsCol1Desc": "Toptan distribütörlere, gıda üreticilerine ve birinci sınıf perakende markalarına birden fazla kıtada tedarik sağlıyoruz.",
+    "eu": "Avrupa Birliği",
+    "na": "Kuzey Amerika",
+    "me": "Orta Doğu ve KİK",
+    "ap": "Asya Pasifik",
+    "marketsCol2Title": "Güvenilirlik ve Standartlar",
+    "marketsCol2Desc": "Sıkı kalite kontrol, etik uygulamalar ve sürdürülebilirliğe bağlı uluslararası sertifikalı operasyonlar.",
+    "contactDesc": "Tedarik ihtiyaçlarınız hakkında konuşmaya başlayalım.",
+    "goToContact": "İletişime Geçin",
+    "b2bTitle": "Küresel İhracat",
+    "b2bDesc": "Toptan ve Toplu siparişler kabul edilir. Küresel iş ihtiyaçlarınızı karşılamak için devasa konteyner siparişlerini ve uluslararası lojistiği yönetecek tam donanıma sahibiz."
+  },
+  "aboutPage": {
+    "certEyebrow": "SERTİFİKALAR",
+    "certTitle": "Tüm Detaylar",
+    "certDesc": "En yüksek küresel standartlara göre sertifikalandırılmıştır.",
+    "pending": "Beklemede"
+  },
+  "blogPage": {
+    "eyebrow": "HABERLER VE BLOG",
+    "title": "En Son Güncellemeler",
+    "desc": "Şirket haberleri, hasat güncellemeleri ve sektör içgörüleri."
+  },
+  "productsPage": {
+    "viewDetails": "Detayları İncele",
+    "comingSoon": "Ürünler yakında.",
+    "ourCollection": "KOLEKSİYONUMUZ",
+    "downloadCatalog": "Katalogu İndir"
+  }
+}

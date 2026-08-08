@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "locale": "en",
+    "dir": "ltr",
+    "reviewStatus": "source"
+  },
+  "categories": {
+    "dates": {
+      "title": "Elite Dates",
+      "desc": "Hand-harvested premium Arabian dates."
+    },
+    "olives": {
+      "title": "Olives",
+      "desc": "World-class pickled olives."
+    },
+    "olive_oil": {
+      "title": "Extra Virgin Olive Oil",
+      "desc": "Cold-pressed within hours of harvest."
+    }
+  },
+  "seo": {
+    "title": "Castle Crops | Import & Export of Dates, Olives & Olive Oil",
+    "description": "Castle Crops delivers the finest Arabian dates, extra virgin olive oil, and pickled olives to international markets, with world-class quality and packaging standards.",
+    "ogTitle": "Castle Crops — From the Valley's Soil to Tables Worldwide",
+    "ogDescription": "Import, export, and local distribution of Elite dates, a full range of olives, and extra virgin olive oil."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "farms": "Our Farms",
+    "products": "Products",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp",
+    "blog": "Blog",
+    "brand": "CASTLE CROPS"
+  },
+  "hero": {
+    "eyebrow": "IMPORT · EXPORT · LOCAL DISTRIBUTION",
+    "headline": "From the valley's soil, to",
+    "headlineHighlight": "tables worldwide",
+    "lead": "Castle Crops delivers the finest Arabian dates, extra virgin olive oil and pickled olives, packed and exported to world-class standards.",
+    "ctaQuote": "Request a Quote",
+    "ctaProducts": "Explore Products",
+    "scroll": "SCROLL"
+  },
+  "ticker": {
+    "text": "Premium Dates ✦ World-Class Olives ✦ Extra Virgin Olive Oil ✦ Global Export ✦ International Packaging Standards ✦"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title": "Quality that begins at the roots",
+    "paragraph1": "Castle Crops is a leading import and export company specializing in sourcing and supplying the finest natural agricultural products. We take pride in delivering premium Arabian dates, extra virgin olive oil, and pickled olives to international markets.",
+    "paragraph2": "Driven by deep industry expertise and a robust logistics network, we guarantee our products meet world-class quality and packaging standards — consistently exceeding our clients' expectations.",
+    "visionTitle": "Our Vision",
+    "visionDesc": "To become the global standard for premium agricultural exports, bridging ancient farming traditions with modern sustainability, and delivering the unparalleled quality of Arabian harvests to tables worldwide.",
+    "cta": "Get in Touch"
+  },
+  "farms": {
+    "eyebrow": "Our Farms",
+    "title": "Straight from the field to your table",
+    "lead": "We partner with elite strategic farms practicing sustainable, eco-friendly agriculture — nourished by pure water and rich soil under optimal sunlight.",
+    "stat1Title": "Precise Hand-Harvest",
+    "stat1Desc": "Full oversight of hand-picking and careful sorting at every step.",
+    "stat2Title": "Optimal Sun & Rich Soil",
+    "stat2Desc": "Natural growing conditions that give every crop its authentic taste.",
+    "stat3Title": "100% Natural",
+    "stat3Desc": "Products entirely free of harmful chemical additives.",
+    "galleryEyebrow": "PHOTO / VIDEO GALLERY",
+    "galleryTitle": "Glimpses from the heart of our sustainable farms.",
+    "block1Title": "The Heritage of Our Palms",
+    "block1Desc": "Nestled in ancient oases, our date palm groves benefit from year-round sunshine and mineral-rich underground aquifers. We cultivate our dates using generations of inherited agricultural wisdom, completely free of artificial pesticides. This meticulous care yields dates of unmatched sweetness, size, and nutritional value.",
+    "block2Title": "Sustainable Olive Orchards",
+    "block2Desc": "Our olive trees span vast, meticulously maintained orchards rooted in nutrient-dense soil. We employ sustainable irrigation and natural pest control to protect the local ecosystem. Harvested gently by hand, our olives are cold-pressed within hours to preserve their vibrant, peppery flavor and ultra-low acidity.",
+    "block3Title": "Purity in Every Drop",
+    "block3Desc": "Our state-of-the-art extraction facilities are located directly on the farms, ensuring that olives are cold-pressed within hours of harvesting. This rapid, temperature-controlled process guarantees the lowest possible acidity and locks in the robust, peppery antioxidants that define world-class Extra Virgin Olive Oil."
+  },
+  "products": {
+    "eyebrow": "Our Products",
+    "title": "The good earth's trilogy",
+    "dates": {
+      "tag": "ELITE DATES",
+      "title": "Premium Semi-Dry Dates",
+      "desc": "Carefully selected from valley farms, available in premium and standard grades with export- and retail-ready packaging sizes.",
+      "cta": "Request a Quote"
+    },
+    "olives": {
+      "tag": "OLIVES",
+      "title": "Green · Black · Stuffed · Marinated",
+      "desc": "A complete olive range packed to fit every market — retail jars and export-grade barrels for bulk orders.",
+      "cta": "Request a Quote"
+    },
+    "oliveOil": {
+      "tag": "OLIVE OIL",
+      "title": "Extra Virgin",
+      "desc": "Extra virgin olive oil pressed from carefully selected harvests, offered in a range of bottle and bulk sizes.",
+      "cta": "Request a Quote"
+    },
+    "featuredBadge": "Featured Product"
+  },
+  "markets": {
+    "eyebrow": "Markets & Trust",
+    "title": "Serving those who trust quality",
+    "weServe": "We Serve",
+    "wholesale": "Wholesale Traders",
+    "retail": "Shops & Retailers",
+    "certTitle": "Quality Certifications",
+    "certNote": "* Reserved slots for certification logos once available."
+  },
+  "contact": {
+    "eyebrow": "Contact Us",
+    "title": "Start Your Quote Request",
+    "form": {
+      "name": "Name",
+      "company": "Company",
+      "phone": "Phone / WhatsApp",
+      "email": "Email",
+      "product": "Product Interested In",
+      "quantity": "Approximate Quantity",
+      "quantityPlaceholder": "200 kg / 1 ton ...",
+      "message": "Message",
+      "submit": "Send Quote Request",
+      "successAlert": "Thank you, your request has been received — we'll be in touch shortly.",
+      "productSelect": "-- Select Product --",
+      "optDates": "Premium Dates",
+      "optOlives": "Olives",
+      "optOil": "Extra Virgin Olive Oil",
+      "errName": "Name must be at least 2 characters long",
+      "errPhoneReq": "Phone number is required",
+      "errPhoneInv": "Invalid phone number format",
+      "errEmail": "Please enter a valid email address",
+      "errProduct": "Please select at least one product"
+    },
+    "whatsappCard": {
+      "title": "Instant WhatsApp Contact",
+      "desc": "For quick inquiries and urgent orders",
+      "cta": "Message Us"
+    },
+    "infoCard": {
+      "title": "Contact Information",
+      "phone": "Branch phone lines",
+      "email": "Official email",
+      "location": "Location"
+    },
+    "infoTitle": "Contact Information",
+    "waDesc": "For quick inquiries and urgent orders",
+    "waCta": "Message",
+    "pageDesc": "Request a quote for export shipments."
+  },
+  "footer": {
+    "tagline": "Bringing the finest of Arabian land to the world with world-class quality.",
+    "companyHeading": "Company",
+    "aboutLink": "About",
+    "farmsLink": "Our Farms",
+    "productsHeading": "Products",
+    "datesLink": "Dates",
+    "olivesLink": "Olives",
+    "oilLink": "Olive Oil",
+    "contactHeading": "Contact",
+    "quoteLink": "Request a Quote",
+    "whatsappLink": "WhatsApp",
+    "copyright": "© {year} Castle Crops for Import & Export. All rights reserved.",
+    "mockupNote": "Design Mockup — Preview",
+    "blogLink": "News & Blog",
+    "privacyLink": "Privacy Policy",
+    "termsLink": "Terms of Service"
+  },
+  "langSwitcher": {
+    "label": "Language"
+  },
+  "pages": {
+    "farmsGallery": {
+      "title": "Our Farms Gallery",
+      "subtitle": "Photos and video, from field to package"
+    },
+    "careers": {
+      "title": "Careers",
+      "subtitle": "Join the Castle Crops team",
+      "empty": "No open positions right now"
+    },
+    "blog": {
+      "title": "News & Blog",
+      "subtitle": "Latest company and industry updates",
+      "empty": "No articles yet"
+    },
+    "certifications": {
+      "title": "Quality Certifications",
+      "subtitle": "Certified to the highest global standards"
+    }
+  },
+  "a11y": {
+    "openLabel": "Accessibility options",
+    "title": "Accessibility",
+    "textSize": "Text Size",
+    "textSizeNormal": "Normal",
+    "textSizeLarge": "Large",
+    "textSizeExtraLarge": "Extra Large",
+    "highContrast": "High Contrast",
+    "reduceMotion": "Reduce Motion",
+    "underlineLinks": "Underline Links",
+    "readableFont": "Readable Font",
+    "reset": "Reset to Default",
+    "close": "Close"
+  },
+  "home": {
+    "productsDesc": "Available in bulk and consumer packaging.",
+    "datesDesc": "Hand-picked from the finest palms, offering rich flavor and perfect texture.",
+    "oliveOilDesc": "100% natural, extracted directly from pristine olives.",
+    "olivesDesc": "Cured to perfection, retaining their firm bite and deep flavor.",
+    "viewCatalog": "View Full Catalog",
+    "blogEyebrow": "LATEST NEWS",
+    "blogTitle": "From The Blog",
+    "blogDesc": "Insights, stories, and updates from Castle Crops.",
+    "noArticles": "No articles yet",
+    "readArticle": "Read Article",
+    "viewAllArticles": "View All Articles",
+    "marketsDesc": "Exporting to multiple continents with full compliance.",
+    "marketsCol1Title": "Global Export",
+    "marketsCol1Desc": "We supply wholesale distributors, food manufacturers, and premium retail brands across multiple continents.",
+    "eu": "European Union",
+    "na": "North America",
+    "me": "Middle East & GCC",
+    "ap": "Asia Pacific",
+    "marketsCol2Title": "Reliability & Standards",
+    "marketsCol2Desc": "Internationally certified operations adhering to strict quality control, ethical practices, and sustainability.",
+    "contactDesc": "Let’s start a conversation about your supply needs.",
+    "goToContact": "Get in Touch",
+    "b2bTitle": "Exporting Globally",
+    "b2bDesc": "Wholesale & Bulk inquiries welcome. We are fully equipped to handle massive container orders and international logistics to meet your global business needs."
+  },
+  "aboutPage": {
+    "certEyebrow": "CERTIFICATIONS",
+    "certTitle": "Full Detail",
+    "certDesc": "Certified to the highest global standards.",
+    "pending": "Pending"
+  },
+  "blogPage": {
+    "eyebrow": "NEWS & BLOG",
+    "title": "Latest Updates",
+    "desc": "Company news, harvest updates, and industry insights."
+  },
+  "productsPage": {
+    "viewDetails": "View Details",
+    "comingSoon": "Products coming soon.",
+    "ourCollection": "OUR COLLECTION",
+    "downloadCatalog": "Download Products Catalog"
+  }
+}
