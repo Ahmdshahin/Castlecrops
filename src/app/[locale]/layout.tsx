@@ -58,7 +58,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: 'Castle Crops',
       images: [
         {
-          url: '/images/hero_bg.jpg',
+          url: '/herosection.png',
           width: 1200,
           height: 630,
           alt: 'Castle Crops - Premium Dates, Olives & Olive Oil',
@@ -66,6 +66,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ],
       locale: resolvedParams.locale,
       type: 'website',
+    },
+    twitter: {
+      title: t('ogTitle'),
+      description: t('ogDescription'),
+      images: ['/herosection.png'],
+      card: 'summary_large_image',
     },
     icons: {
       icon: [
