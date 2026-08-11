@@ -354,6 +354,7 @@
     .globe-icon { display: block; }
     .lang-text { display: none !important; }
     .lang-switcher .lang-toggle { padding: 0 !important; border: none !important; background: transparent !important; color: var(--cream) !important; }
+    .theme-toggle-btn { padding: 0 !important; }
 
     .nav-actions .wa-btn span.txt { display: none; }
     .nav-actions .wa-btn {
