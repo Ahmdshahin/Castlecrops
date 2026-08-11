@@ -43,6 +43,7 @@ export default function LanguageSwitcher({ currentLocale, enabledLocales }: { cu
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="listbox"
         aria-expanded={open}
+        aria-label="Switch Language"
         disabled={isPending}
       >
         <span className="globe-icon"><Globe size={24} strokeWidth={1.5} /></span>

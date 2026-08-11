@@ -78,8 +78,6 @@ export async function deleteGalleryImage(filename: string, fullUrl: string) {
   }
 
   // Safe to delete
-  const { error: dbError } = await supabase.from('media_gallery').delete().eq('url', fullUrl);
-  if (dbError) return { success: false, inUse: false, message: dbError.message };
 
   const { error } = await supabase.storage.from('media').remove([filename]);
   
