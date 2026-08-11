@@ -69,9 +69,6 @@ export async function middleware(request: NextRequest) {
   response.cookies.set(LOCALE_COOKIE, locale, { maxAge: 60 * 60 * 24 * 365 });
   return response;
 }
-
-// Next.js actually looks for `middleware` export in `middleware.ts` but since this file is `proxy.ts`
-// we export it as both proxy and middleware to ensure compatibility.
 export const proxy = middleware;
 
 export const config = {
