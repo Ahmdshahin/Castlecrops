@@ -50,7 +50,7 @@ export const Header = ({ enabledLocales, whatsappUrl }: { enabledLocales?: strin
         <div className="container nav-inner">
         <Link href={`/${locale}`} className="brand-mini flex items-center">
           <Image src="/logo_dark.png" alt="Castle Crops Logo" width={40} height={40} className="object-contain" />
-          <span>{t('brand')}</span>
+          <span className="whitespace-nowrap">{t('brand')}</span>
         </Link>
 
         <nav className="links">
