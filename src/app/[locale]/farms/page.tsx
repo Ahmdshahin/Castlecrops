@@ -9,6 +9,7 @@ type GalleryItem = {
   id: string;
   type: GalleryItemType;
   url: string;
+  localizedUrls?: Record<string, string>;
   isFeatured: boolean;
 };
 
@@ -116,27 +117,31 @@ export default async function FarmsPage({
         
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {galleryItems.map((item) => (
-              <div 
-                key={item.id} 
-                className={`relative bg-black-soft border border-gold-dim/50 flex items-center justify-center text-cream-dim hover:border-gold transition-colors overflow-hidden rounded-2xl ${
-                  item.isFeatured ? 'lg:col-span-2' : ''
-                } h-64 md:h-80 w-full`}
-              >
-                {item.type === 'video' ? (
-                  <iframe 
-                    className="w-full h-full"
-                    src={item.url} 
-                    title="Farm Video"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                ) : (
-                  <Image src={item.url} alt="Farm Scene" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" loading="lazy" />
-                )}
-              </div>
-            ))}
+            {galleryItems.map((item) => {
+              const videoUrl = item.type === 'video' ? (item.localizedUrls?.[locale] || item.url) : '';
+              
+              return (
+                <div 
+                  key={item.id} 
+                  className={`relative bg-black-soft border border-gold-dim/50 flex items-center justify-center text-cream-dim hover:border-gold transition-colors overflow-hidden rounded-2xl ${
+                    item.isFeatured ? 'lg:col-span-2' : ''
+                  } h-64 md:h-80 w-full`}
+                >
+                  {item.type === 'video' ? (
+                    <iframe 
+                      className="w-full h-full"
+                      src={videoUrl} 
+                      title="Farm Video"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  ) : (
+                    <Image src={item.url} alt="Farm Scene" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className="object-cover" loading="lazy" />
+                  )}
+                </div>
+              );
+            })}
           </div>
 
           <div className="mt-24 max-w-6xl mx-auto space-y-24">

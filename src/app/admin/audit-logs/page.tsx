@@ -23,15 +23,35 @@ export default async function AuditLogsPage({
 
   let query = supabase
     .from('admin_audit_logs')
-    .select('*, admin:admin_id(email)', { count: 'exact' });
+    .select('*', { count: 'exact' });
 
   if (search) {
     query = query.ilike('action', `%${search}%`);
   }
 
-  const { data: logs, count } = await query
+  const { data: logs, count, error } = await query
     .order('created_at', { ascending: false })
     .range((page - 1) * pageSize, page * pageSize - 1);
+
+  if (error) {
+    console.error("Audit logs query error:", error);
+  }
+
+  let finalLogs = logs || [];
+  if (finalLogs.length > 0) {
+    const adminIds = Array.from(new Set(finalLogs.map(l => l.admin_id).filter(Boolean)));
+    const { data: adminUsers } = await supabase
+      .from('admin_users')
+      .select('id, email')
+      .in('id', adminIds);
+      
+    const adminMap = new Map((adminUsers || []).map(u => [u.id, u.email]));
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    finalLogs = finalLogs.map((log: any) => ({
+      ...log,
+      admin: { email: adminMap.get(log.admin_id) || 'Unknown' }
+    }));
+  }
 
   return (
     <div>
@@ -39,7 +59,7 @@ export default async function AuditLogsPage({
         <h1 className="text-3xl font-serif-latin text-gold-bright">Audit Logs</h1>
       </div>
       <AuditLogList 
-        initialLogs={logs || []} 
+        initialLogs={finalLogs} 
         totalCount={count || 0}
         currentPage={page}
         pageSize={pageSize}

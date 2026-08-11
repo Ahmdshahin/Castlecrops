@@ -22,7 +22,7 @@ export function ThemeToggle() {
   };
 
   if (!theme) {
-    return <div style={{ width: 36, height: 36 }}></div>;
+    return <div style={{ width: 40, height: 40 }}></div>;
   }
 
   return (
@@ -31,7 +31,7 @@ export function ThemeToggle() {
       className="p-2 text-cream hover:text-gold-bright transition-colors duration-200"
       aria-label="Toggle Theme"
     >
-      {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+      {theme === 'dark' ? <Sun size={24} strokeWidth={1.5} /> : <Moon size={24} strokeWidth={1.5} />}
     </button>
   );
 }

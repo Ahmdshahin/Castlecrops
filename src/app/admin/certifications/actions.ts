@@ -4,6 +4,7 @@ import { supabaseAdmin as supabase } from '../../../services/supabaseAdmin';
 import { revalidatePath } from 'next/cache';
 import { uploadImage } from '../../../utils/upload';
 import { requireAdminRole } from '../actions';
+import { logAdminAction } from '../../../lib/auditLogger';
 
 export async function createCertification(formData: FormData) {
   await requireAdminRole('certifications');
@@ -34,6 +35,8 @@ export async function createCertification(formData: FormData) {
     return { success: false, error: error.message };
   }
 
+  await logAdminAction('CREATE_CERTIFICATION', { name_en: name.en });
+
   revalidatePath('/admin/certifications');
   revalidatePath('/[locale]/about', 'page');
   return { success: true };
@@ -49,6 +52,8 @@ export async function deleteCertification(id: string) {
   if (error) {
     return { error: error.message };
   }
+
+  await logAdminAction('DELETE_CERTIFICATION', { id });
 
   revalidatePath('/admin/certifications');
   revalidatePath('/[locale]/about', 'page');
@@ -87,6 +92,8 @@ export async function updateCertification(id: string, formData: FormData) {
     console.error('Error updating certification:', error);
     return { error: error.message };
   }
+
+  await logAdminAction('UPDATE_CERTIFICATION', { id, name_en: name.en });
 
   revalidatePath('/admin/certifications');
   revalidatePath('/[locale]/about', 'page');

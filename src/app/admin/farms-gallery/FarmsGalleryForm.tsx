@@ -5,13 +5,15 @@ import { updateFarmsGallery, uploadFarmsGalleryImage } from './actions';
 import { getGalleryImages } from '../../../utils/upload';
 import { useAdminT } from '../../../components/admin/AdminLangProvider';
 import Image from 'next/image';
+import { locales, localeLabels } from '../../../i18n.config';
 
 export type GalleryItemType = 'image' | 'video';
 
 export type GalleryItem = {
   id: string;
   type: GalleryItemType;
-  url: string;
+  url: string; // fallback or default url
+  localizedUrls?: Record<string, string>;
   isFeatured: boolean;
 };
 
@@ -58,6 +60,21 @@ export const FarmsGalleryForm = ({ initialData }: { initialData: GalleryItem[] }
         }
         return item;
       }
+    }));
+  };
+
+  const handleLocalizedUrlChange = (id: string, localeCode: string, newUrl: string) => {
+    setItems(items.map(item => {
+      if (item.id === id) {
+        return {
+          ...item,
+          localizedUrls: {
+            ...(item.localizedUrls || {}),
+            [localeCode]: newUrl
+          }
+        };
+      }
+      return item;
     }));
   };
 
@@ -135,16 +152,48 @@ export const FarmsGalleryForm = ({ initialData }: { initialData: GalleryItem[] }
                 </div>
                 
                 <div className="flex flex-col gap-1">
-                  <label className="text-xs text-cream-dim">{item.type === 'video' ? t.common.videoUrl : t.common.image + ' URL (/images/... or uploaded URL)'}</label>
-                  <div className="flex gap-2">
-                    <input 
-                      type="text"
-                      value={item.url}
-                      onChange={(e) => handleChange(item.id, 'url', e.target.value)}
-                      placeholder={item.type === 'video' ? 'https://www.youtube.com/embed/...' : '/images/farms/farm_scene.jpg'}
-                      className="bg-black-matte border border-gold-dim p-2 flex-1 text-cream font-mono text-sm rounded-xl focus:border-gold outline-none"
-                    />
-                  </div>
+                  {item.type === 'image' ? (
+                    <>
+                      <label className="text-xs text-cream-dim">{t.common.image + ' URL (/images/... or uploaded URL)'}</label>
+                      <div className="flex gap-2">
+                        <input 
+                          type="text"
+                          value={item.url}
+                          onChange={(e) => handleChange(item.id, 'url', e.target.value)}
+                          placeholder={'/images/farms/farm_scene.jpg'}
+                          className="bg-black-matte border border-gold-dim p-2 flex-1 text-cream font-mono text-sm rounded-xl focus:border-gold outline-none"
+                        />
+                      </div>
+                    </>
+                  ) : (
+                    <div className="flex flex-col gap-3">
+                      <label className="text-xs text-cream-dim">{t.common.videoUrl} (Separate links per language, falls back to Default)</label>
+                      <div className="flex flex-col gap-2">
+                        <div className="flex gap-2 items-center">
+                          <span className="text-xs font-bold w-20">Default:</span>
+                          <input 
+                            type="text"
+                            value={item.url}
+                            onChange={(e) => handleChange(item.id, 'url', e.target.value)}
+                            placeholder={'https://www.youtube.com/embed/...'}
+                            className="bg-black-matte border border-gold-dim p-2 flex-1 text-cream font-mono text-sm rounded-xl focus:border-gold outline-none"
+                          />
+                        </div>
+                        {locales.map(loc => (
+                          <div key={loc} className="flex gap-2 items-center">
+                            <span className="text-xs text-cream-dim w-20">{localeLabels[loc].native} ({localeLabels[loc].flag}):</span>
+                            <input 
+                              type="text"
+                              value={item.localizedUrls?.[loc] || ''}
+                              onChange={(e) => handleLocalizedUrlChange(item.id, loc, e.target.value)}
+                              placeholder={`https://www.youtube.com/embed/... (${loc})`}
+                              className="bg-black-matte border border-gold-dim/50 p-2 flex-1 text-cream font-mono text-sm rounded-xl focus:border-gold outline-none"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   
                   {item.type === 'image' && (
                     <div className="flex gap-2 mt-2">

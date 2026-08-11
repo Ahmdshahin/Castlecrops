@@ -10,7 +10,6 @@ import { getSiteSettings } from "../../services/settings";
 import dynamic from "next/dynamic";
 import "../globals.css";
 
-const FloatingWhatsApp = dynamic(() => import("../../components/FloatingWhatsApp").then(mod => mod.FloatingWhatsApp));
 const AccessibilityWidget = dynamic(() => import("../../components/AccessibilityWidget").then(mod => mod.AccessibilityWidget));
 import { AnalyticsTracker } from "../../components/AnalyticsTracker";
 import { NetworkStatusTracker } from "../../components/NetworkStatusTracker";
@@ -46,7 +45,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'),
-    title: t('title'),
+    title: {
+      template: `%s | ${t('title')}`,
+      default: t('title')
+    },
     description: t('description'),
     alternates: {
       canonical: './',
@@ -167,7 +169,6 @@ export default async function RootLayout({
             {children}
           </div>
           <Footer />
-          <FloatingWhatsApp whatsappUrl={settings['whatsapp_url']} />
           <AccessibilityWidget />
         </NextIntlClientProvider>
       </body>

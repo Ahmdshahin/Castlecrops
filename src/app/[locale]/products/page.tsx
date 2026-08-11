@@ -13,6 +13,16 @@ type LocalizedProduct = Omit<ProductRow, 'name' | 'description'> & {
 
 export const revalidate = 3600; // ISR cache
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const resolvedParams = await params;
+  const t = await getTranslations({ locale: resolvedParams.locale, namespace: 'seo' });
+  const p = await getTranslations({ locale: resolvedParams.locale, namespace: 'nav' });
+  return {
+    title: p('products') || 'Products',
+    description: t('description')
+  };
+}
+
 export default async function ProductsPage({
   params,
 }: {

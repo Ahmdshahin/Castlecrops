@@ -7,6 +7,8 @@ import { locales, localeLabels, type Locale } from "../i18n.config";
 const LOCALE_COOKIE = "NEXT_LOCALE";
 const LOCALE_STORAGE_KEY = "castlecrops_locale"; // requirement #4 fallback for client-side reads
 
+import { Globe } from 'lucide-react';
+
 export default function LanguageSwitcher({ currentLocale, enabledLocales }: { currentLocale: Locale, enabledLocales: string[] }) {
   const [open, setOpen] = useState(false);
   const [isPending, startTransition] = useTransition();
@@ -37,14 +39,17 @@ export default function LanguageSwitcher({ currentLocale, enabledLocales }: { cu
   return (
     <div className="lang-switcher">
       <button
-        className="lang-toggle flex items-center gap-2"
+        className="lang-toggle flex items-center gap-2 text-cream hover:text-gold-bright transition-colors duration-200"
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="listbox"
         aria-expanded={open}
         disabled={isPending}
       >
-        <span>{localeLabels[currentLocale].flag}</span>
-        <span>{localeLabels[currentLocale].native}</span>
+        <span className="globe-icon"><Globe size={24} strokeWidth={1.5} /></span>
+        <span className="lang-text flex items-center gap-2">
+          <span>{localeLabels[currentLocale].flag}</span>
+          <span>{localeLabels[currentLocale].native}</span>
+        </span>
       </button>
 
       {open && (

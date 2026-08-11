@@ -3,6 +3,7 @@
 import { supabaseAdmin as supabase } from '../../../services/supabaseAdmin';
 import { revalidatePath } from 'next/cache';
 import { requireAdminRole } from '../actions';
+import { logAdminAction } from '../../../lib/auditLogger';
 
 export async function updateFarmsGallery(galleryJson: string) {
   await requireAdminRole('farmsGallery');
@@ -14,6 +15,17 @@ export async function updateFarmsGallery(galleryJson: string) {
     if (error) {
       return { success: false, error: error.message };
     }
+    
+    let details = {};
+    try {
+      const parsed = JSON.parse(galleryJson);
+      details = {
+        total_items_saved: parsed.length,
+        items_summary: parsed.map((item: any) => item.type).join(', ')
+      };
+    } catch(e) {}
+    
+    await logAdminAction('UPDATE_FARMS_GALLERY', details);
     
     revalidatePath('/', 'layout');
     return { success: true };
@@ -34,6 +46,7 @@ export async function uploadFarmsGalleryImage(formData: FormData) {
       return { error: 'Image size must be less than 1.5 MB.' };
     }
     const url = await uploadImage(file);
+    await logAdminAction('UPLOAD_FARMS_GALLERY_IMAGE', { url });
     return { url };
   } catch (e: unknown) {
     return { error: e instanceof Error ? e.message : 'Unknown error' };

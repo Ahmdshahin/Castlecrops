@@ -77,6 +77,21 @@ export const AuditLogList = ({
     }
   };
 
+  const formatDetails = (details: any) => {
+    if (!details || typeof details !== 'object' || Object.keys(details).length === 0) return '-';
+    
+    return (
+      <div className="flex flex-col gap-1">
+        {Object.entries(details).map(([key, value]) => (
+          <div key={key} className="truncate">
+            <span className="font-semibold text-gold-dim capitalize mr-2">{key.replace(/_/g, ' ')}:</span> 
+            <span className="text-cream">{String(value)}</span>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col md:flex-row justify-between items-center bg-black-soft p-4 border border-gold-dim rounded-2xl gap-4">
@@ -147,11 +162,11 @@ export const AuditLogList = ({
                   <td className="p-4 text-sm text-cream">{log.admin?.email || 'Unknown'}</td>
                   <td className="p-4 text-sm">
                     <span className="bg-gold-dim/20 text-gold px-2 py-1 rounded-xl text-xs uppercase tracking-wide">
-                      {log.action}
+                      {log.action.replace(/_/g, ' ')}
                     </span>
                   </td>
-                  <td className="p-4 text-sm text-cream-dim max-w-xs truncate" title={JSON.stringify(log.details)}>
-                    {JSON.stringify(log.details)}
+                  <td className="p-4 text-sm text-cream-dim max-w-xs" title={JSON.stringify(log.details, null, 2)}>
+                    {formatDetails(log.details)}
                   </td>
                 </tr>
               ))

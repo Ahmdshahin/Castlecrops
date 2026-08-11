@@ -4,6 +4,7 @@ import { supabaseAdmin as supabase } from '../../../services/supabaseAdmin';
 import { uploadImage } from '../../../utils/upload';
 import { requireAdminRole } from '../actions';
 import { revalidatePath } from 'next/cache';
+import { logAdminAction } from '../../../lib/auditLogger';
 
 export async function uploadGalleryImage(formData: FormData) {
   await requireAdminRole('gallery');
@@ -17,6 +18,9 @@ export async function uploadGalleryImage(formData: FormData) {
     if (!uploadedUrl) {
       return { success: false, error: 'Upload failed' };
     }
+    
+    await logAdminAction('UPLOAD_GALLERY_IMAGE', { url: uploadedUrl });
+    
     revalidatePath('/admin/gallery');
     return { success: true, url: uploadedUrl };
   } catch (err: unknown) {
@@ -83,6 +87,8 @@ export async function deleteGalleryImage(filename: string, fullUrl: string) {
     console.error('Delete error:', error);
     return { success: false, inUse: false, message: error.message };
   }
+
+  await logAdminAction('DELETE_GALLERY_IMAGE', { filename });
 
   revalidatePath('/admin/gallery');
   return { success: true };

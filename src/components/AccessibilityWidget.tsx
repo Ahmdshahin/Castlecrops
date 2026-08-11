@@ -71,11 +71,11 @@ export const AccessibilityWidget = () => {
 
   if (!isLoaded) return null;
 
-  const positionClasses = isRtl ? 'bottom-6 right-6' : 'bottom-6 left-6';
-  const panelPositionClasses = isRtl ? 'bottom-16 right-0' : 'bottom-16 left-0';
+  const positionClasses = isRtl ? 'bottom-6 left-6' : 'bottom-6 right-6';
+  const panelPositionClasses = isRtl ? 'bottom-16 left-0' : 'bottom-16 right-0';
 
   return (
-    <div className={`fixed z-50 ${positionClasses}`}>
+    <div className={`a11y-widget fixed z-50 ${positionClasses}`}>
       <button
         ref={triggerRef}
         onClick={() => setIsOpen(!isOpen)}

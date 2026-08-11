@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   // Hostinger may have a parent package-lock.json; pin tracing to this app only.
   outputFileTracingRoot: path.join(__dirname),
   images: {
+    unoptimized: true,
     remotePatterns: [
       { 
         protocol: 'https', 

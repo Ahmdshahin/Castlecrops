@@ -10,6 +10,15 @@ import { getSiteSettings } from '../../services/settings';
 
 export const revalidate = 3600; // Cache this page for 1 hour for maximum performance
 
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const resolvedParams = await params;
+  const t = await getTranslations({ locale: resolvedParams.locale, namespace: 'seo' });
+  return {
+    title: t('title'),
+    description: t('description')
+  };
+}
+
 export default async function HomePage({
   params,
 }: {
@@ -71,7 +80,7 @@ export default async function HomePage({
           {catalogPdfUrl && (
             <div className="hero-download mb-8 flex justify-center relative z-10 w-full">
               <a href="/api/catalog" target="_blank" rel="noopener noreferrer" className="btn-primary inline-flex items-center gap-2 mx-auto">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m0 0l-4-4m4 4l4-4" /></svg>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m0 0l-4-4m4 4l4-4" /></svg>
                 {t('productsPage.downloadCatalog') || 'Download Products Catalog'}
               </a>
             </div>
@@ -141,7 +150,7 @@ export default async function HomePage({
         <div className="container">
           <div className="farms-grid">
             <div className="farm-stat">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="mx-auto text-gold mb-6">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="mx-auto text-gold mb-6" aria-hidden="true">
                 <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0"/>
                 <path d="M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2"/>
                 <path d="M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/>
@@ -152,7 +161,7 @@ export default async function HomePage({
             </div>
             
             <div className="farm-stat">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="mx-auto text-gold mb-6">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="mx-auto text-gold mb-6" aria-hidden="true">
                 <circle cx="12" cy="12" r="4"/>
                 <path d="M12 2v2"/>
                 <path d="M12 20v2"/>
@@ -168,7 +177,7 @@ export default async function HomePage({
             </div>
             
             <div className="farm-stat">
-              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="mx-auto text-gold mb-6">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" className="mx-auto text-gold mb-6" aria-hidden="true">
                 <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
                 <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
               </svg>
@@ -301,11 +310,11 @@ export default async function HomePage({
               <p>{t('home.marketsCol1Desc')}</p>
               <ul className="check-list">
                 <li>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   {t('home.eu')}
                 </li>
                 <li>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   {t('home.na')}
                 </li>
                 <li>
@@ -320,7 +329,7 @@ export default async function HomePage({
             </div>
             <div className="market-col">
               <div className="trust-badge">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-gold mb-4"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-gold mb-4" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                 <h4>{t('home.marketsCol2Title')}</h4>
                 <p>{t('home.marketsCol2Desc')}</p>
               </div>
@@ -338,7 +347,7 @@ export default async function HomePage({
           <div className="bg-black-soft border border-gold/50 p-8 md:p-12 text-center rounded-2xl relative overflow-hidden shadow-[0_0_30px_rgba(201,162,39,0.1)]">
             <div className="absolute inset-0 opacity-5 bg-[url('/images/hero_bg.jpg')] bg-cover mix-blend-overlay"></div>
             <div className="relative z-10">
-              <svg className="w-12 h-12 text-gold mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-12 h-12 text-gold mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
               <h2 className="text-3xl md:text-4xl text-gold-bright font-serif-latin mb-4">
