@@ -1,16 +1,6 @@
-'use client';
-
-import { motion } from 'framer-motion';
-
 export const SealDivider = ({ className }: { className?: string }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`flex items-center justify-center gap-4 py-16 ${className || ''}`}
-    >
+    <div className={`flex items-center justify-center gap-4 py-16 ${className || ''}`}>
       <div className="h-px w-full max-w-[180px] bg-gradient-to-r from-transparent to-gold" />
       
       <svg viewBox="0 0 60 60" className="w-[46px] h-[46px] shrink-0">
@@ -20,6 +10,6 @@ export const SealDivider = ({ className }: { className?: string }) => {
       </svg>
       
       <div className="h-px w-full max-w-[180px] bg-gradient-to-l from-transparent to-gold" />
-    </motion.div>
+    </div>
   );
 };
