@@ -19,8 +19,30 @@
     }
   },
   "seo": {
-    "title": "Castle Crops | Import i eksport daktyli, oliwek i oliwy z oliwek",
-    "description": "Castle Crops dostarcza najwyższej jakości arabskie daktyle, oliwę z oliwek najwyższej jakości z pierwszego tłoczenia oraz marynowane oliwki na rynki międzynarodowe, zgodnie ze światowymi standardami jakości i pakowania.",
+    "home": {
+      "title": "Castle Crops | Import i eksport daktyli, oliwek i oliwy z oliwek",
+      "description": "Castle Crops dostarcza najwyższej jakości arabskie daktyle, oliwę z oliwek najwyższej jakości z pierwszego tłoczenia oraz marynowane oliwki na rynki międzynarodowe, zgodnie ze światowymi standardami jakości i pakowania."
+    },
+    "about": {
+      "title": "O Nas | Castle Crops",
+      "description": "Dowiedz się więcej o Castle Crops, wiodącej firmie importowo-eksportowej specjalizującej się w premium arabskich daktylach, oliwie z oliwek najwyższej jakości i marynowanych oliwkach."
+    },
+    "farms": {
+      "title": "Nasze Farmy | Castle Crops",
+      "description": "Poznaj nasze elitarne farmy strategiczne stosujące zrównoważone, przyjazne dla środowiska rolnictwo do produkcji światowej klasy daktyli, oliwek i oliwy."
+    },
+    "products": {
+      "title": "Nasze Produkty | Castle Crops",
+      "description": "Odkryj nasz wybór premium arabskich daktyli, oliwy z oliwek extra virgin oraz pełną gamę marynowanych oliwek na eksport i do hurtu."
+    },
+    "contact": {
+      "title": "Kontakt | Castle Crops",
+      "description": "Skontaktuj się z Castle Crops, aby poprosić o wycenę dla przesyłek eksportowych daktyli premium, oliwek i oliwy z oliwek."
+    },
+    "blog": {
+      "title": "Wiadomości i Blog | Castle Crops",
+      "description": "Przeczytaj najnowsze wiadomości, aktualizacje z okresu żniw i analizy branżowe od Castle Crops."
+    },
     "ogTitle": "Castle Crops — Z ziemi doliny na stoły całego świata",
     "ogDescription": "Import, eksport i dystrybucja lokalna daktyli z doliny, pełnej gamy oliwek oraz oliwy z oliwek najwyższej jakości."
   },

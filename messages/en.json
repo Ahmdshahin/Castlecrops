@@ -19,8 +19,30 @@
     }
   },
   "seo": {
-    "title": "Castle Crops | Import & Export of Dates, Olives & Olive Oil",
-    "description": "Castle Crops delivers the finest Arabian dates, extra virgin olive oil, and pickled olives to international markets, with world-class quality and packaging standards.",
+    "home": {
+      "title": "Castle Crops | Import & Export of Dates, Olives & Olive Oil",
+      "description": "Castle Crops delivers the finest Arabian dates, extra virgin olive oil, and pickled olives to international markets, with world-class quality and packaging standards."
+    },
+    "about": {
+      "title": "About Us | Castle Crops",
+      "description": "Learn about Castle Crops, a leading import and export company specializing in premium Arabian dates, extra virgin olive oil, and pickled olives."
+    },
+    "farms": {
+      "title": "Our Farms | Castle Crops",
+      "description": "Explore our elite strategic farms practicing sustainable, eco-friendly agriculture to produce world-class dates, olives, and olive oil."
+    },
+    "products": {
+      "title": "Our Products | Castle Crops",
+      "description": "Discover our premium selection of Arabian dates, extra virgin olive oil, and a complete range of pickled olives for export and wholesale."
+    },
+    "contact": {
+      "title": "Contact Us | Castle Crops",
+      "description": "Get in touch with Castle Crops to request a quote for export shipments of premium dates, olives, and olive oil."
+    },
+    "blog": {
+      "title": "News & Blog | Castle Crops",
+      "description": "Read the latest news, harvest updates, and industry insights from Castle Crops."
+    },
     "ogTitle": "Castle Crops — From the Valley's Soil to Tables Worldwide",
     "ogDescription": "Import, export, and local distribution of Elite dates, a full range of olives, and extra virgin olive oil."
   },

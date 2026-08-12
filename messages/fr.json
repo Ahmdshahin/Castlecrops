@@ -19,8 +19,30 @@
     }
   },
   "seo": {
-    "title": "Castle Crops | Import-export de dattes, olives et huile d'olive",
-    "description": "Castle Crops livre les meilleures dattes arabes, huile d'olive extra vierge et olives marinées aux marchés internationaux, selon des normes de qualité et d'emballage de classe mondiale.",
+    "home": {
+      "title": "Castle Crops | Import-export de dattes, olives et huile d'olive",
+      "description": "Castle Crops livre les meilleures dattes arabes, huile d'olive extra vierge et olives marinées aux marchés internationaux, selon des normes de qualité et d'emballage de classe mondiale."
+    },
+    "about": {
+      "title": "À Propos | Castle Crops",
+      "description": "Découvrez Castle Crops, une entreprise leader dans l'import-export spécialisée dans les dattes arabes premium, l'huile d'olive extra vierge et les olives marinées."
+    },
+    "farms": {
+      "title": "Nos Fermes | Castle Crops",
+      "description": "Explorez nos fermes stratégiques d'élite pratiquant une agriculture durable et respectueuse de l'environnement pour produire des dattes et de l'huile d'olive de classe mondiale."
+    },
+    "products": {
+      "title": "Nos Produits | Castle Crops",
+      "description": "Découvrez notre sélection premium de dattes arabes, d'huile d'olive extra vierge et notre gamme complète d'olives marinées pour l'exportation."
+    },
+    "contact": {
+      "title": "Contact | Castle Crops",
+      "description": "Contactez Castle Crops pour demander un devis pour vos expéditions d'exportation de dattes premium, d'olives et d'huile d'olive."
+    },
+    "blog": {
+      "title": "Actualités & Blog | Castle Crops",
+      "description": "Lisez les dernières nouvelles, les mises à jour des récoltes et les informations sur le secteur par Castle Crops."
+    },
     "ogTitle": "Castle Crops — De la terre de la vallée aux tables du monde entier",
     "ogDescription": "Import, export et distribution locale de dattes de la vallée, d'une gamme complète d'olives et d'huile d'olive extra vierge."
   },

@@ -23,13 +23,12 @@ function getPhoneDisplay(phoneStr: string) {
   return { countryCode: '', formatted: phoneStr, original: phoneStr };
 }
 
+import { generateLocalizedMetadata } from '../../../utils/seo';
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const resolvedParams = await params;
   const t = await getTranslations({ locale: resolvedParams.locale, namespace: 'seo' });
-  return {
-    title: `Contact Us - ${t('title')}`,
-    description: t('description'),
-  };
+  return generateLocalizedMetadata({ t, locale: resolvedParams.locale, page: 'contact', path: '/contact' });
 }
 
 export default async function ContactPage({

@@ -19,8 +19,30 @@
     }
   },
   "seo": {
-    "title": "Castle Crops | Hurma, Zeytin ve Zeytinyağı İthalat-İhracatı",
-    "description": "Castle Crops, en kaliteli Arap hurmalarını, sızma zeytinyağını ve turşu zeytinleri dünya standartlarında kalite ve ambalaj ile uluslararası pazarlara ulaştırır.",
+    "home": {
+      "title": "Castle Crops | Hurma, Zeytin ve Zeytinyağı İthalat-İhracatı",
+      "description": "Castle Crops, en kaliteli Arap hurmalarını, sızma zeytinyağını ve turşu zeytinleri dünya standartlarında kalite ve ambalaj ile uluslararası pazarlara ulaştırır."
+    },
+    "about": {
+      "title": "Hakkımızda | Castle Crops",
+      "description": "Birinci sınıf Arap hurmaları, sızma zeytinyağı ve salamura zeytinlerde uzmanlaşmış lider ithalat ve ihracat şirketi Castle Crops hakkında daha fazla bilgi edinin."
+    },
+    "farms": {
+      "title": "Çiftliklerimiz | Castle Crops",
+      "description": "Dünya standartlarında hurma, zeytin ve zeytinyağı üretmek için sürdürülebilir ve çevre dostu tarım uygulayan seçkin stratejik çiftliklerimizi keşfedin."
+    },
+    "products": {
+      "title": "Ürünlerimiz | Castle Crops",
+      "description": "İhracat ve toptan satış için Arap hurmaları, sızma zeytinyağı ve eksiksiz salamura zeytin yelpazemizi keşfedin."
+    },
+    "contact": {
+      "title": "İletişim | Castle Crops",
+      "description": "Premium hurma, zeytin ve zeytinyağı ihracat gönderileri için fiyat teklifi istemek üzere Castle Crops ile iletişime geçin."
+    },
+    "blog": {
+      "title": "Haberler ve Blog | Castle Crops",
+      "description": "Castle Crops'tan en son haberleri, hasat güncellemelerini ve sektör içgörülerini okuyun."
+    },
     "ogTitle": "Castle Crops — Vadinin Toprağından Dünyanın Sofralarına",
     "ogDescription": "Vadi hurması, geniş zeytin çeşitleri ve sızma zeytinyağının ithalatı, ihracatı ve yerel dağıtımı."
   },

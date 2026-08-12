@@ -41,40 +41,9 @@ const almarai = Almarai({
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const resolvedParams = await params;
-  const t = await getTranslations({ locale: resolvedParams.locale, namespace: 'seo' });
-
+  
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'),
-    title: {
-      template: `%s | ${t('title')}`,
-      default: t('title')
-    },
-    description: t('description'),
-    alternates: {
-      canonical: './',
-    },
-    openGraph: {
-      title: t('ogTitle'),
-      description: t('ogDescription'),
-      url: './',
-      siteName: 'Castle Crops',
-      images: [
-        {
-          url: '/herosection.png',
-          width: 1200,
-          height: 630,
-          alt: 'Castle Crops - Premium Dates, Olives & Olive Oil',
-        }
-      ],
-      locale: resolvedParams.locale,
-      type: 'website',
-    },
-    twitter: {
-      title: t('ogTitle'),
-      description: t('ogDescription'),
-      images: ['/herosection.png'],
-      card: 'summary_large_image',
-    },
     icons: {
       icon: [
         { url: '/icon-16x16.png', sizes: '16x16', type: 'image/png' },

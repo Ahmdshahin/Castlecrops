@@ -5,13 +5,12 @@ import { supabaseAdmin as supabase } from '../../../services/supabaseAdmin';
 
 export const revalidate = 3600; // ISR cache
 
+import { generateLocalizedMetadata } from '../../../utils/seo';
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const resolvedParams = await params;
   const t = await getTranslations({ locale: resolvedParams.locale, namespace: 'seo' });
-  return {
-    title: `About Us - ${t('title')}`,
-    description: t('description'),
-  };
+  return generateLocalizedMetadata({ t, locale: resolvedParams.locale, page: 'about', path: '/about' });
 }
 
 export default async function AboutPage({

@@ -5,13 +5,12 @@ import Image from 'next/image';
 
 export const revalidate = 3600;
 
+import { generateLocalizedMetadata } from '../../../utils/seo';
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const resolvedParams = await params;
   const t = await getTranslations({ locale: resolvedParams.locale, namespace: 'seo' });
-  return {
-    title: `Blog - ${t('title')}`,
-    description: t('description'),
-  };
+  return generateLocalizedMetadata({ t, locale: resolvedParams.locale, page: 'blog', path: '/blog' });
 }
 
 export default async function BlogPage({

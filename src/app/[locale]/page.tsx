@@ -8,15 +8,14 @@ const SealDivider = dynamic(() => import('../../components/SealDivider').then(mo
 import { supabaseAdmin as supabase } from '../../services/supabaseAdmin';
 import { getSiteSettings } from '../../services/settings';
 
-export const revalidate = 3600; // Cache this page for 1 hour for maximum performance
+export const revalidate = 3600;
+
+import { generateLocalizedMetadata } from '../../utils/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const resolvedParams = await params;
   const t = await getTranslations({ locale: resolvedParams.locale, namespace: 'seo' });
-  return {
-    title: t('title'),
-    description: t('description')
-  };
+  return generateLocalizedMetadata({ t, locale: resolvedParams.locale, page: 'home', path: '/' });
 }
 
 export default async function HomePage({
