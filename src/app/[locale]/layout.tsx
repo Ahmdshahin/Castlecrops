@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Jost, Amiri, Almarai } from "next/font/google";
+import { Jost, Amiri, Almarai } from "next/font/google";
+import localFont from "next/font/local";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -15,10 +16,26 @@ import { AnalyticsTracker } from "../../components/AnalyticsTracker";
 import { NetworkStatusTracker } from "../../components/NetworkStatusTracker";
 
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
+const cormorant = localFont({
+  src: [
+    {
+      path: "../../../public/fonts/cormorant-garamond-latin-400-normal.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../../public/fonts/cormorant-garamond-latin-600-normal.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../../public/fonts/cormorant-garamond-latin-700-normal.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-cormorant",
+  display: "swap",
 });
 
 const jost = Jost({
