@@ -15,8 +15,15 @@ export function AnalyticsTracker() {
       trackedPath.current = pathname;
       const userAgent = window.navigator.userAgent;
       
-      // Fire and forget
-      logPageVisit(pathname, userAgent).catch(() => {});
+      // Fire and forget, fetch country from client-side API as fallback for non-Vercel hosting
+      fetch('https://get.geojs.io/v1/ip/country.json')
+        .then(res => res.json())
+        .then(data => {
+          logPageVisit(pathname, userAgent, data.country).catch(() => {});
+        })
+        .catch(() => {
+          logPageVisit(pathname, userAgent).catch(() => {});
+        });
     }
   }, [pathname]);
 

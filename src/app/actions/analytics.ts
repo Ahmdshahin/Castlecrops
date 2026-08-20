@@ -3,14 +3,10 @@
 import { headers } from 'next/headers';
 import { supabaseAdmin as supabase } from '../../services/supabaseAdmin';
 
-export async function logPageVisit(path: string, userAgent?: string) {
+export async function logPageVisit(path: string, userAgent?: string, clientCountry?: string) {
   try {
     const headersList = await headers();
-    let country = headersList.get('x-vercel-ip-country') || headersList.get('cf-ipcountry') || 'Unknown';
-
-    if (country === 'Unknown' && process.env.NODE_ENV === 'development') {
-      country = 'EG'; // Fallback for local testing
-    }
+    let country = clientCountry || headersList.get('x-vercel-ip-country') || headersList.get('cf-ipcountry') || 'Unknown';
 
     // Only log public facing pages, ignore admin, api, _next paths etc.
     if (path.startsWith('/admin') || path.startsWith('/api') || path.startsWith('/_next')) {
