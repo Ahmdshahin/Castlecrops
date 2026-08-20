@@ -28,7 +28,15 @@ export const TopPagesChart: React.FC<TopPagesChartProps> = ({ title, data }) => 
             return (
               <div key={index} className="w-full">
                 <div className="flex justify-between items-end mb-1">
-                  <span className="text-cream text-sm truncate max-w-[70%]">{item.path}</span>
+                  <a 
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cream text-sm truncate max-w-[70%] hover:text-gold hover:underline transition-colors block"
+                    title={item.path}
+                  >
+                    {item.path}
+                  </a>
                   <span className="text-gold font-serif-latin text-sm">{item.visits}</span>
                 </div>
                 <div className="w-full h-2 bg-black-matte border border-gold-dim/30 rounded-full overflow-hidden">
