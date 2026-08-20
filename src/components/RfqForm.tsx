@@ -67,6 +67,7 @@ export const RfqForm = () => {
     const newErrors: Record<string, string> = {};
     
     // next-intl throws if key is missing; gracefully fallback
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const tSafe = (key: any, fallback: string) => {
       try { return t(key) || fallback; } catch { return fallback; }
     };

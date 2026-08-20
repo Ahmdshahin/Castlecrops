@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Jost, Amiri, Almarai } from "next/font/google";
 import localFont from "next/font/local";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales, getDirection, type Locale } from "../../i18n.config";
 import { Header } from "../../components/Header";
@@ -57,7 +57,7 @@ const almarai = Almarai({
 });
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const resolvedParams = await params;
+  await params;
   
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com'),

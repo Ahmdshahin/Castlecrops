@@ -6,6 +6,7 @@ import { cookies } from "next/headers";
 import { getAdminT } from "../../lib/admin-i18n";
 import { VisitsBarChart } from "../../components/admin/VisitsBarChart";
 import { TopPagesChart } from "../../components/admin/TopPagesChart";
+import VisitsWorldMap from "../../components/admin/VisitsWorldMap";
 
 export default async function AdminDashboard() {
   const cookieStore = await cookies();
@@ -33,7 +34,7 @@ export default async function AdminDashboard() {
   
   const { data: recentVisits } = await supabase
     .from('page_visits')
-    .select('created_at, path')
+    .select('created_at, path, country')
     .gte('created_at', sevenDaysAgo.toISOString());
     
   const barChartData: { label: string; value: number; dateString: string }[] = [];
@@ -48,6 +49,7 @@ export default async function AdminDashboard() {
   }
   
   const topPagesMap: Record<string, number> = {};
+  const countryVisitsMap: Record<string, number> = {};
 
   (recentVisits || []).forEach(visit => {
     const visitDate = new Date(visit.created_at).toDateString();
@@ -58,12 +60,19 @@ export default async function AdminDashboard() {
     
     const path = visit.path || '/';
     topPagesMap[path] = (topPagesMap[path] || 0) + 1;
+    
+    if (visit.country && visit.country !== 'Unknown') {
+      countryVisitsMap[visit.country] = (countryVisitsMap[visit.country] || 0) + 1;
+    }
   });
   
   const topPagesData = Object.entries(topPagesMap)
     .map(([path, visits]) => ({ path, visits }))
     .sort((a, b) => b.visits - a.visits)
     .slice(0, 5);
+
+  const countryVisitsData = Object.entries(countryVisitsMap)
+    .map(([country, visits]) => ({ country, visits }));
 
   return (
     <div>
@@ -98,6 +107,10 @@ export default async function AdminDashboard() {
         <div className="lg:col-span-1">
           <TopPagesChart title={t.sidebar.topPages} data={topPagesData} />
         </div>
+      </div>
+
+      <div className="mt-8">
+        <VisitsWorldMap title={t.sidebar.globalVisitors} data={countryVisitsData} />
       </div>
     </div>
   );

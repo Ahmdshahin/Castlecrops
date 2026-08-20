@@ -17,6 +17,7 @@ export function ShareButtons({ title, locale = 'en' }: { title: string, locale?:
   const shareText = shareTextMap[locale] || 'Share:';
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setUrl(window.location.href);
   }, []);
 

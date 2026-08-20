@@ -21,6 +21,7 @@ export const adminDict = {
       todayVisits: "Today's Visits",
       visitsLast7Days: "Visits (Last 7 Days)",
       topPages: "Top Pages",
+      globalVisitors: "Global Visitors",
       backToWebsite: "View Website"
     },
     common: {
@@ -224,6 +225,7 @@ export const adminDict = {
       todayVisits: "زيارات اليوم",
       visitsLast7Days: "الزيارات (آخر 7 أيام)",
       topPages: "أكثر الصفحات زيارة",
+      globalVisitors: "الزوار حول العالم",
       backToWebsite: "عرض الموقع"
     },
     common: {

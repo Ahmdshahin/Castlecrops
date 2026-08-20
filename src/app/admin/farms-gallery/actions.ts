@@ -21,9 +21,11 @@ export async function updateFarmsGallery(galleryJson: string) {
       const parsed = JSON.parse(galleryJson);
       details = {
         total_items_saved: parsed.length,
-        items_summary: parsed.map((item: any) => item.type).join(', ')
+        items_summary: parsed.map((item: Record<string, unknown>) => item.type).join(', ')
       };
-    } catch(e) {}
+    } catch {
+      // ignore parse error
+    }
     
     await logAdminAction('UPDATE_FARMS_GALLERY', details);
     

@@ -77,7 +77,7 @@ export const AuditLogList = ({
     }
   };
 
-  const formatDetails = (details: any) => {
+  const formatDetails = (details: Record<string, unknown> | null | undefined) => {
     if (!details || typeof details !== 'object' || Object.keys(details).length === 0) return '-';
     
     return (
