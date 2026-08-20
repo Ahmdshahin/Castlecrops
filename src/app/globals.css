@@ -57,6 +57,16 @@
     --hero-veil-bot:rgba(244,239,225,0.95);
   }
   
+  .logo-light-only {
+    display: none !important;
+  }
+  [data-theme='light'] .logo-light-only {
+    display: block !important;
+  }
+  [data-theme='light'] .logo-dark-only {
+    display: none !important;
+  }
+
   /* Invert hero background image in light mode */
   [data-theme='light'] .hero-bg img {
     filter: invert(1) hue-rotate(180deg) brightness(1.2);

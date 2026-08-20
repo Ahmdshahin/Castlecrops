@@ -15,7 +15,8 @@ export const Footer = async () => {
     <footer id="footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <Image src="/logo_dark.png" alt="Castle Crops Logo" width={64} height={64} className="object-contain mb-4" loading="lazy" />
+          <Image src="/logo_dark.png" alt="Castle Crops Logo" width={64} height={64} className="object-contain mb-4 logo-dark-only" loading="lazy" />
+          <Image src="/logo_light.png" alt="Castle Crops Logo" width={64} height={64} className="object-contain mb-4 logo-light-only" loading="lazy" />
           <p>{t('tagline')}</p>
           <SocialIcons settings={settings} className="flex flex-wrap gap-4 mt-6" />
         </div>

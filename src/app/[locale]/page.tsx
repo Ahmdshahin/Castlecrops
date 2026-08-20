@@ -66,7 +66,8 @@ export default async function HomePage({
         </div>
         <div className="hero-veil"></div>
         <div className="hero-content">
-          <Image src="/logo_dark.png" alt="Castle Crops Crest" width={150} height={150} className="hero-crest" priority={true} />
+          <Image src="/logo_dark.png" alt="Castle Crops Crest" width={150} height={150} className="hero-crest logo-dark-only" priority={true} />
+          <Image src="/logo_light.png" alt="Castle Crops Crest" width={150} height={150} className="hero-crest logo-light-only" priority={true} />
           <span className="hero-eyebrow">{t('hero.eyebrow')}</span>
           <h1>
             <>
@@ -127,7 +128,8 @@ export default async function HomePage({
             <div className="frame">
               <div className="corner tl"></div>
               <div className="corner br"></div>
-              <Image src="/logo_dark.png" alt="Emblem" width={280} height={280} loading="lazy" />
+              <Image src="/logo_dark.png" alt="Emblem" width={280} height={280} loading="lazy" className="logo-dark-only" />
+              <Image src="/logo_light.png" alt="Emblem" width={280} height={280} loading="lazy" className="logo-light-only" />
             </div>
           </div>
         </div>
@@ -211,7 +213,8 @@ export default async function HomePage({
             {categories?.map((cat) => (
               <Link key={cat.id} href={`/${locale}/products#${cat.slug}`} className="product-card block cursor-pointer group">
                 <div className="relative w-full h-[240px] overflow-hidden">
-                  <Image sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src={cat.image_url || '/logo_dark.png'} alt={cat.name[locale] || cat.name.en} fill className="object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+                  <Image sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src={cat.image_url || '/logo_dark.png'} alt={cat.name[locale] || cat.name.en} fill className={`object-cover transition-transform duration-700 group-hover:scale-105 ${cat.image_url ? '' : 'logo-dark-only'}`} loading="lazy" />
+                  {!cat.image_url && <Image sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="/logo_light.png" alt={cat.name[locale] || cat.name.en} fill className="object-cover transition-transform duration-700 group-hover:scale-105 logo-light-only" loading="lazy" />}
                 </div>
                 <div className="p-6">
                   <h3>{cat.name[locale] || cat.name.en}</h3>
@@ -259,9 +262,19 @@ export default async function HomePage({
                       alt={post.title[locale] || post.title.en} 
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       fill 
-                      className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                      className={`object-cover group-hover:scale-105 transition-transform duration-700 ${post.cover_image_url ? '' : 'logo-dark-only'}`} 
                       loading="lazy"
                     />
+                    {!post.cover_image_url && (
+                      <Image 
+                        src="/logo_light.png" 
+                        alt={post.title[locale] || post.title.en} 
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        fill 
+                        className="object-cover group-hover:scale-105 transition-transform duration-700 logo-light-only" 
+                        loading="lazy"
+                      />
+                    )}
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <span className="text-gold text-sm mb-3">

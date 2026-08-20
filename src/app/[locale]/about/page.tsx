@@ -49,7 +49,8 @@ export default async function AboutPage({
             <div className="frame">
               <div className="corner tl"></div>
               <div className="corner br"></div>
-              <Image src="/logo_dark.png" alt="Castle Crops Emblem" width={280} height={280} className="mx-auto" priority={true} />
+              <Image src="/logo_dark.png" alt="Castle Crops Emblem" width={280} height={280} className="mx-auto logo-dark-only" priority={true} />
+              <Image src="/logo_light.png" alt="Castle Crops Emblem" width={280} height={280} className="mx-auto logo-light-only" priority={true} />
             </div>
           </div>
         </div>

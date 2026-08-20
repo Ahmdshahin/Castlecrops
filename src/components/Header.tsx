@@ -49,7 +49,8 @@ export const Header = ({ enabledLocales, whatsappUrl }: { enabledLocales?: strin
       <header className={`nav ${isScrolled ? 'solid' : ''} ${isMenuOpen ? 'menu-open' : ''}`} id="siteNav">
         <div className="container nav-inner">
         <Link href={`/${locale}`} className="brand-mini flex items-center">
-          <Image src="/logo_dark.png" alt="Castle Crops Logo" width={40} height={40} className="object-contain" />
+          <Image src="/logo_dark.png" alt="Castle Crops Logo" width={40} height={40} className="object-contain logo-dark-only" />
+          <Image src="/logo_light.png" alt="Castle Crops Logo" width={40} height={40} className="object-contain logo-light-only" />
           <span className="hidden min-[416px]:inline whitespace-nowrap">{t('brand')}</span>
           <span className="flex flex-col leading-[0.85] min-[416px]:hidden">
             {t('brand').split(' ').map((word, i) => (
