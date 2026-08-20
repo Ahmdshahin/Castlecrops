@@ -62,9 +62,19 @@ export default async function BlogPage({
                       alt={post.title[locale] || post.title.en} 
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       fill 
-                      className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                      className={`object-cover group-hover:scale-105 transition-transform duration-700 ${post.cover_image_url ? '' : 'logo-dark-only'}`} 
                       loading="lazy"
                     />
+                    {!post.cover_image_url && (
+                      <Image 
+                        src="/logo_light.png" 
+                        alt={post.title[locale] || post.title.en} 
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        fill 
+                        className="object-cover group-hover:scale-105 transition-transform duration-700 logo-light-only" 
+                        loading="lazy"
+                      />
+                    )}
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
                     <span className="text-gold text-sm mb-3">

@@ -1,4 +1,4 @@
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { supabaseAdmin as supabase } from '../../../../services/supabaseAdmin';
 import Image from 'next/image';
@@ -37,6 +37,7 @@ export default async function BlogPostPage({
 }) {
   const resolvedParams = await params;
   setRequestLocale(resolvedParams.locale);
+  const t = await getTranslations('blogPage');
   
   const { data: post } = await supabase
     .from('blog_posts')
@@ -48,7 +49,7 @@ export default async function BlogPostPage({
     return (
       <main className="flex min-h-screen flex-col pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto w-full">
         <Link href={`/${resolvedParams.locale}/blog`} className="text-gold hover:text-gold-bright mb-8 inline-block">
-          &larr; Back to Blog
+          {resolvedParams.locale === 'ar' ? <>&rarr;</> : <>&larr;</>} {t('backToBlog')}
         </Link>
         <h1 className="text-4xl font-bold font-serif-latin text-gold-bright mb-4">
           Article Not Found
@@ -63,7 +64,7 @@ export default async function BlogPostPage({
   return (
     <main className="flex min-h-screen flex-col pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto w-full">
       <Link href={`/${resolvedParams.locale}/blog`} className="text-gold hover:text-gold-bright mb-8 inline-block">
-        &larr; Back to Blog
+        {resolvedParams.locale === 'ar' ? <>&rarr;</> : <>&larr;</>} {t('backToBlog')}
       </Link>
       
       <span className="text-gold text-sm mb-4 block">

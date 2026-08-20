@@ -50,7 +50,8 @@ export default function ForgotPassword() {
         <div className="absolute bottom-0 left-0 w-12 h-12 border-b border-l border-gold/20 -translate-x-1 translate-y-1"></div>
         
         <div className="text-center mb-10 flex flex-col items-center">
-          <Image src="/logo_dark.png" alt="Logo" width={80} height={80} className="mb-6 opacity-90 drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]" priority />
+          <Image src="/logo_dark.png" alt="Logo" width={80} height={80} className="mb-6 opacity-90 drop-shadow-[0_0_15px_rgba(212,175,55,0.3)] logo-dark-only" priority />
+          <Image src="/logo_light.png" alt="Logo" width={80} height={80} className="mb-6 opacity-90 drop-shadow-[0_0_15px_rgba(212,175,55,0.3)] logo-light-only" priority />
           <span className="eyebrow mx-auto tracking-[0.4em] text-gold-bright text-xs">SECURITY</span>
           <h1 className="text-3xl font-serif-latin text-cream mt-2 mb-1 tracking-wide">Reset Password</h1>
         </div>

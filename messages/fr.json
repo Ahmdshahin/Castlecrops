@@ -258,7 +258,8 @@
   "blogPage": {
     "eyebrow": "ACTUALITÉS & BLOG",
     "title": "Dernières Mises à Jour",
-    "desc": "Nouvelles de l'entreprise, mises à jour sur les récoltes et informations sur l'industrie."
+    "desc": "Nouvelles de l'entreprise, mises à jour sur les récoltes et informations sur l'industrie.",
+    "backToBlog": "Retour au Blog"
   },
   "productsPage": {
     "viewDetails": "Voir les Détails",

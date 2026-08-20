@@ -16,7 +16,8 @@ export default async function ScanLandingPage({
   return (
     <main className="flex min-h-screen flex-col pt-20 pb-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full items-center text-center">
       <div className="mb-12 animate-in fade-in zoom-in duration-700">
-        <Image src="/logo_dark.png" alt="Castle Crops" width={160} height={80} className="object-contain" />
+        <Image src="/logo_dark.png" alt="Castle Crops" width={160} height={80} className="object-contain logo-dark-only" />
+        <Image src="/logo_light.png" alt="Castle Crops" width={160} height={80} className="object-contain logo-light-only" />
       </div>
       
       <div className="bg-black-soft border border-gold p-8 md:p-12 w-full animate-in fade-in slide-in-from-bottom-8 duration-700 delay-300">

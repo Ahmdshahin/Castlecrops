@@ -258,7 +258,8 @@
   "blogPage": {
     "eyebrow": "HABERLER VE BLOG",
     "title": "En Son Güncellemeler",
-    "desc": "Şirket haberleri, hasat güncellemeleri ve sektör içgörüleri."
+    "desc": "Şirket haberleri, hasat güncellemeleri ve sektör içgörüleri.",
+    "backToBlog": "Bloga Dön"
   },
   "productsPage": {
     "viewDetails": "Detayları İncele",

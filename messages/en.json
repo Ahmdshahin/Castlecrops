@@ -258,7 +258,8 @@
   "blogPage": {
     "eyebrow": "NEWS & BLOG",
     "title": "Latest Updates",
-    "desc": "Company news, harvest updates, and industry insights."
+    "desc": "Company news, harvest updates, and industry insights.",
+    "backToBlog": "Back to Blog"
   },
   "productsPage": {
     "viewDetails": "View Details",

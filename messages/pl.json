@@ -258,7 +258,8 @@
   "blogPage": {
     "eyebrow": "AKTUALNOŚCI I BLOG",
     "title": "Najnowsze Aktualizacje",
-    "desc": "Wiadomości firmowe, aktualizacje ze zbiorów i spostrzeżenia branżowe."
+    "desc": "Wiadomości firmowe, aktualizacje ze zbiorów i spostrzeżenia branżowe.",
+    "backToBlog": "Powrót do Bloga"
   },
   "productsPage": {
     "viewDetails": "Zobacz szczegóły",
