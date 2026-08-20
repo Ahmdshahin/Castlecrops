@@ -265,5 +265,12 @@
     "comingSoon": "المنتجات قريباً.",
     "ourCollection": "مجموعتنا",
     "downloadCatalog": "تحميل كتالوج المنتجات"
+  },
+  "productDetails": {
+    "featured": "مميز",
+    "availablePackaging": "خيارات التعبئة المتوفرة",
+    "requestExportQuote": "طلب عرض سعر للتصدير",
+    "originLocalFarms": "المنشأ: مزارع محلية",
+    "category": "الفئة:"
   }
 }

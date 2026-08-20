@@ -37,6 +37,7 @@ export default async function ProductDetailPage({
   const resolvedParams = await params;
   const { locale, slug } = resolvedParams;
   const tNav = await getTranslations("nav");
+  const t = await getTranslations("productDetails");
 
   const { data: product } = await supabase
     .from("products")
@@ -96,7 +97,7 @@ export default async function ProductDetailPage({
             
             {product.is_featured && (
               <div className="absolute top-4 left-4 bg-gold text-black px-3 py-1 text-xs font-bold uppercase tracking-wider">
-                {locale === 'en' ? 'Featured' : 'مميز'}
+                {t('featured')}
               </div>
             )}
           </div>
@@ -114,7 +115,7 @@ export default async function ProductDetailPage({
             {product.packaging_options && product.packaging_options.length > 0 && (
               <div className="mb-10 p-6 border border-cream-line bg-black-soft/50 rounded">
                 <h3 className="text-xl font-serif text-cream mb-4 border-b border-cream-line pb-2">
-                  {locale === 'en' ? 'Available Packaging' : 'خيارات التعبئة المتوفرة'}
+                  {t('availablePackaging')}
                 </h3>
                 <ul className="grid grid-cols-2 gap-3">
                   {product.packaging_options.map((opt: string, i: number) => (
@@ -133,14 +134,14 @@ export default async function ProductDetailPage({
                 href={`/${locale}/contact?product=${product.slug}`} 
                 className="inline-flex justify-center items-center px-8 py-4 bg-gold text-black font-semibold uppercase tracking-wider hover:bg-gold-bright transition-colors text-center"
               >
-                {locale === 'en' ? 'Request Export Quote' : 'طلب عرض سعر للتصدير'}
+                {t('requestExportQuote')}
               </Link>
             </div>
             
             {/* Meta info */}
             <div className="mt-8 pt-6 border-t border-cream-line flex items-center justify-between text-sm text-cream-dim">
-              <span>{locale === 'en' ? 'Origin: Local Farms' : 'المنشأ: مزارع محلية'}</span>
-              <span>{locale === 'en' ? 'Category:' : 'الفئة:'} {categoryTitle}</span>
+              <span>{t('originLocalFarms')}</span>
+              <span>{t('category')} {categoryTitle}</span>
             </div>
 
             <ShareButtons title={product.name[locale] || product.name.en} locale={locale} />

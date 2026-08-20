@@ -265,5 +265,12 @@
     "comingSoon": "Products coming soon.",
     "ourCollection": "OUR COLLECTION",
     "downloadCatalog": "Download Products Catalog"
+  },
+  "productDetails": {
+    "featured": "Featured",
+    "availablePackaging": "Available Packaging",
+    "requestExportQuote": "Request Export Quote",
+    "originLocalFarms": "Origin: Local Farms",
+    "category": "Category:"
   }
 }

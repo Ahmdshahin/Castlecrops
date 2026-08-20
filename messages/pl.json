@@ -261,9 +261,16 @@
     "desc": "Wiadomości firmowe, aktualizacje ze zbiorów i spostrzeżenia branżowe."
   },
   "productsPage": {
-    "viewDetails": "Zobacz Szczegóły",
+    "viewDetails": "Zobacz szczegóły",
     "comingSoon": "Produkty wkrótce.",
     "ourCollection": "NASZA KOLEKCJA",
     "downloadCatalog": "Pobierz Katalog Produktów"
+  },
+  "productDetails": {
+    "featured": "Polecane",
+    "availablePackaging": "Dostępne opcje pakowania",
+    "requestExportQuote": "Zapytaj o wycenę eksportu",
+    "originLocalFarms": "Pochodzenie: Lokalne farmy",
+    "category": "Kategoria:"
   }
 }

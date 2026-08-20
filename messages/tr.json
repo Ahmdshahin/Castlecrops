@@ -262,8 +262,15 @@
   },
   "productsPage": {
     "viewDetails": "Detayları İncele",
-    "comingSoon": "Ürünler yakında.",
+    "comingSoon": "Ürünler çok yakında.",
     "ourCollection": "KOLEKSİYONUMUZ",
-    "downloadCatalog": "Katalogu İndir"
+    "downloadCatalog": "Ürün Kataloğunu İndir"
+  },
+  "productDetails": {
+    "featured": "Öne Çıkan",
+    "availablePackaging": "Mevcut Ambalaj Seçenekleri",
+    "requestExportQuote": "İhracat Teklifi İste",
+    "originLocalFarms": "Menşei: Yerel Çiftlikler",
+    "category": "Kategori:"
   }
 }

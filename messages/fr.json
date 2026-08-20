@@ -264,6 +264,13 @@
     "viewDetails": "Voir les Détails",
     "comingSoon": "Produits à venir.",
     "ourCollection": "NOTRE COLLECTION",
-    "downloadCatalog": "Télécharger le Catalogue"
+    "downloadCatalog": "Télécharger le Catalogue de Produits"
+  },
+  "productDetails": {
+    "featured": "En vedette",
+    "availablePackaging": "Emballages disponibles",
+    "requestExportQuote": "Demander un devis d'exportation",
+    "originLocalFarms": "Origine: Fermes locales",
+    "category": "Catégorie:"
   }
 }
